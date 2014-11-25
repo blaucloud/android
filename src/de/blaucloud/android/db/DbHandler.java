@@ -17,8 +17,13 @@
  */
 package de.blaucloud.android.db;
 
+<<<<<<< HEAD:src/de/blaucloud/android/db/DbHandler.java
 import de.blaucloud.android.MainApp;
 import de.blaucloud.android.utils.Log_OC;
+=======
+import com.owncloud.android.MainApp;
+import com.owncloud.android.lib.common.utils.Log_OC;
+>>>>>>> origin/master:src/com/owncloud/android/db/DbHandler.java
 
 import android.content.ContentValues;
 import android.content.Context;

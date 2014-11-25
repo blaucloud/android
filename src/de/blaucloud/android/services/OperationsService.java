@@ -35,9 +35,11 @@ import com.owncloud.android.lib.common.accounts.AccountUtils.AccountNotFoundExce
 import com.owncloud.android.lib.common.operations.OnRemoteOperationListener;
 import com.owncloud.android.lib.common.operations.RemoteOperation;
 import com.owncloud.android.lib.common.operations.RemoteOperationResult;
+import com.owncloud.android.lib.common.utils.Log_OC;
 import com.owncloud.android.lib.resources.files.ExistenceCheckRemoteOperation;
 import com.owncloud.android.lib.resources.shares.ShareType;
 import com.owncloud.android.lib.resources.users.GetRemoteUserNameOperation;
+<<<<<<< HEAD:src/de/blaucloud/android/services/OperationsService.java
 import de.blaucloud.android.operations.common.SyncOperation;
 import de.blaucloud.android.operations.CreateFolderOperation;
 import de.blaucloud.android.operations.CreateShareOperation;
@@ -48,6 +50,18 @@ import de.blaucloud.android.operations.RenameFileOperation;
 import de.blaucloud.android.operations.SynchronizeFileOperation;
 import de.blaucloud.android.operations.UnshareLinkOperation;
 import de.blaucloud.android.utils.Log_OC;
+=======
+import com.owncloud.android.operations.common.SyncOperation;
+import com.owncloud.android.operations.CreateFolderOperation;
+import com.owncloud.android.operations.CreateShareOperation;
+import com.owncloud.android.operations.GetServerInfoOperation;
+import com.owncloud.android.operations.MoveFileOperation;
+import com.owncloud.android.operations.OAuth2GetAccessToken;
+import com.owncloud.android.operations.RemoveFileOperation;
+import com.owncloud.android.operations.RenameFileOperation;
+import com.owncloud.android.operations.SynchronizeFileOperation;
+import com.owncloud.android.operations.UnshareLinkOperation;
+>>>>>>> origin/master:src/com/owncloud/android/services/OperationsService.java
 
 import android.accounts.Account;
 import android.accounts.AccountsException;
@@ -79,6 +93,7 @@ public class OperationsService extends Service {
     public static final String EXTRA_CREATE_FULL_PATH = "CREATE_FULL_PATH";
     public static final String EXTRA_SYNC_FILE_CONTENTS = "SYNC_FILE_CONTENTS";
     public static final String EXTRA_RESULT = "RESULT";
+    public static final String EXTRA_NEW_PARENT_PATH = "NEW_PARENT_PATH";
     
     // TODO review if ALL OF THEM are necessary
     public static final String EXTRA_SUCCESS_IF_ABSENT = "SUCCESS_IF_ABSENT";
@@ -97,6 +112,7 @@ public class OperationsService extends Service {
     public static final String ACTION_REMOVE = "REMOVE";
     public static final String ACTION_CREATE_FOLDER = "CREATE_FOLDER";
     public static final String ACTION_SYNC_FILE = "SYNC_FILE";
+    public static final String ACTION_MOVE_FILE = "MOVE_FILE";
     
     public static final String ACTION_OPERATION_ADDED = OperationsService.class.getName() + ".OPERATION_ADDED";
     public static final String ACTION_OPERATION_FINISHED = OperationsService.class.getName() + ".OPERATION_FINISHED";
@@ -375,6 +391,11 @@ public class OperationsService extends Service {
                         String remotePath = operationIntent.getStringExtra(EXTRA_REMOTE_PATH);
                         boolean syncFileContents = operationIntent.getBooleanExtra(EXTRA_SYNC_FILE_CONTENTS, true);
                         operation = new SynchronizeFileOperation(remotePath, account, syncFileContents, getApplicationContext());
+                    } else if (action.equals(ACTION_MOVE_FILE)) {
+                        // Move file/folder
+                        String remotePath = operationIntent.getStringExtra(EXTRA_REMOTE_PATH);
+                        String newParentPath = operationIntent.getStringExtra(EXTRA_NEW_PARENT_PATH);
+                        operation = new MoveFileOperation(remotePath,newParentPath,account);
                     }
                     
                 }

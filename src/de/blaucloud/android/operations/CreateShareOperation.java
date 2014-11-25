@@ -32,12 +32,17 @@ import com.owncloud.android.lib.common.OwnCloudClient;
 import com.owncloud.android.lib.resources.shares.OCShare;
 import com.owncloud.android.lib.common.operations.RemoteOperation;
 import com.owncloud.android.lib.common.operations.RemoteOperationResult;
+import com.owncloud.android.lib.common.utils.Log_OC;
 import com.owncloud.android.lib.resources.shares.GetRemoteSharesForFileOperation;
 import com.owncloud.android.lib.resources.shares.ShareType;
 import com.owncloud.android.lib.resources.shares.CreateRemoteShareOperation;
 import com.owncloud.android.lib.resources.files.FileUtils;
+<<<<<<< HEAD:src/de/blaucloud/android/operations/CreateShareOperation.java
 import de.blaucloud.android.operations.common.SyncOperation;
 import de.blaucloud.android.utils.Log_OC;
+=======
+import com.owncloud.android.operations.common.SyncOperation;
+>>>>>>> origin/master:src/com/owncloud/android/operations/CreateShareOperation.java
 
 public class CreateShareOperation extends SyncOperation {
 

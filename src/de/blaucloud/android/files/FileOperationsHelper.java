@@ -34,11 +34,18 @@ import de.blaucloud.android.files.services.FileUploader.FileUploaderBinder;
 
 import com.owncloud.android.lib.common.accounts.AccountUtils.Constants;
 import com.owncloud.android.lib.common.network.WebdavUtils;
+import com.owncloud.android.lib.common.utils.Log_OC;
 import com.owncloud.android.lib.resources.status.OwnCloudVersion;
+<<<<<<< HEAD:src/de/blaucloud/android/files/FileOperationsHelper.java
 import de.blaucloud.android.services.OperationsService;
 import de.blaucloud.android.ui.activity.FileActivity;
 import de.blaucloud.android.ui.dialog.ShareLinkToDialog;
 import de.blaucloud.android.utils.Log_OC;
+=======
+import com.owncloud.android.services.OperationsService;
+import com.owncloud.android.ui.activity.FileActivity;
+import com.owncloud.android.ui.dialog.ShareLinkToDialog;
+>>>>>>> origin/master:src/com/owncloud/android/files/FileOperationsHelper.java
 
 /**
  * 
@@ -265,7 +272,24 @@ public class FileOperationsHelper {
         } else if (uploaderBinder != null && uploaderBinder.isUploading(account, file)) {
             uploaderBinder.cancel(account, file);
         }
-    }    
+    }
+
+    /**
+     * Start move file operation
+     * @param newfile           File where it is going to be moved
+     * @param currentFile       File with the previous info
+     */
+    public void moveFile(OCFile newfile, OCFile currentFile) {
+        // Move files
+        Intent service = new Intent(mFileActivity, OperationsService.class);
+        service.setAction(OperationsService.ACTION_MOVE_FILE);
+        service.putExtra(OperationsService.EXTRA_NEW_PARENT_PATH, newfile.getRemotePath());
+        service.putExtra(OperationsService.EXTRA_REMOTE_PATH, currentFile.getRemotePath());
+        service.putExtra(OperationsService.EXTRA_ACCOUNT, mFileActivity.getAccount());
+        mWaitingForOpId =  mFileActivity.getOperationsServiceBinder().newOperation(service);
+
+        mFileActivity.showLoadingDialog();
+    }
 
 
     public long getOpIdWaitingFor() {

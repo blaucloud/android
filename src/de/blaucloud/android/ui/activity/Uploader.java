@@ -26,6 +26,7 @@ import java.util.List;
 import java.util.Stack;
 import java.util.Vector;
 
+<<<<<<< HEAD:src/de/blaucloud/android/ui/activity/Uploader.java
 import de.blaucloud.android.MainApp;
 import de.blaucloud.android.R;
 import de.blaucloud.android.authentication.AccountAuthenticator;
@@ -33,6 +34,15 @@ import de.blaucloud.android.datamodel.FileDataStorageManager;
 import de.blaucloud.android.datamodel.OCFile;
 import de.blaucloud.android.files.services.FileUploader;
 import de.blaucloud.android.utils.Log_OC;
+=======
+import com.owncloud.android.MainApp;
+import com.owncloud.android.R;
+import com.owncloud.android.authentication.AccountAuthenticator;
+import com.owncloud.android.datamodel.FileDataStorageManager;
+import com.owncloud.android.datamodel.OCFile;
+import com.owncloud.android.files.services.FileUploader;
+import com.owncloud.android.lib.common.utils.Log_OC;
+>>>>>>> origin/master:src/com/owncloud/android/ui/activity/Uploader.java
 
 import android.accounts.Account;
 import android.accounts.AccountManager;

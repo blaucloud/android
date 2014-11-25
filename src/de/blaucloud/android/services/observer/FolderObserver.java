@@ -30,9 +30,15 @@ import de.blaucloud.android.datamodel.FileDataStorageManager;
 import de.blaucloud.android.datamodel.OCFile;
 import com.owncloud.android.lib.common.operations.RemoteOperationResult;
 import com.owncloud.android.lib.common.operations.RemoteOperationResult.ResultCode;
+<<<<<<< HEAD:src/de/blaucloud/android/services/observer/FolderObserver.java
 import de.blaucloud.android.operations.SynchronizeFileOperation;
 import de.blaucloud.android.ui.activity.ConflictsResolveActivity;
 import de.blaucloud.android.utils.Log_OC;
+=======
+import com.owncloud.android.lib.common.utils.Log_OC;
+import com.owncloud.android.operations.SynchronizeFileOperation;
+import com.owncloud.android.ui.activity.ConflictsResolveActivity;
+>>>>>>> origin/master:src/com/owncloud/android/services/observer/FolderObserver.java
 
 /**
  * Observer watching a folder to request the synchronization of kept-in-sync files

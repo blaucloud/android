@@ -32,6 +32,7 @@ import android.content.IntentFilter;
 import android.database.Cursor;
 import android.os.IBinder;
 
+<<<<<<< HEAD:src/de/blaucloud/android/services/observer/FileObserverService.java
 import de.blaucloud.android.MainApp;
 import de.blaucloud.android.authentication.AccountUtils;
 import de.blaucloud.android.datamodel.OCFile;
@@ -40,6 +41,16 @@ import de.blaucloud.android.files.services.FileDownloader;
 import de.blaucloud.android.operations.SynchronizeFileOperation;
 import de.blaucloud.android.utils.FileStorageUtils;
 import de.blaucloud.android.utils.Log_OC;
+=======
+import com.owncloud.android.MainApp;
+import com.owncloud.android.authentication.AccountUtils;
+import com.owncloud.android.datamodel.OCFile;
+import com.owncloud.android.db.ProviderMeta.ProviderTableMeta;
+import com.owncloud.android.files.services.FileDownloader;
+import com.owncloud.android.lib.common.utils.Log_OC;
+import com.owncloud.android.operations.SynchronizeFileOperation;
+import com.owncloud.android.utils.FileStorageUtils;
+>>>>>>> origin/master:src/com/owncloud/android/services/observer/FileObserverService.java
 
 
 /**

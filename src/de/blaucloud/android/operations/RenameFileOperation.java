@@ -24,10 +24,16 @@ import de.blaucloud.android.datamodel.OCFile;
 import com.owncloud.android.lib.common.OwnCloudClient;
 import com.owncloud.android.lib.common.operations.RemoteOperationResult;
 import com.owncloud.android.lib.common.operations.RemoteOperationResult.ResultCode;
+import com.owncloud.android.lib.common.utils.Log_OC;
 import com.owncloud.android.lib.resources.files.RenameRemoteFileOperation;
+<<<<<<< HEAD:src/de/blaucloud/android/operations/RenameFileOperation.java
 import de.blaucloud.android.operations.common.SyncOperation;
 import de.blaucloud.android.utils.FileStorageUtils;
 import de.blaucloud.android.utils.Log_OC;
+=======
+import com.owncloud.android.operations.common.SyncOperation;
+import com.owncloud.android.utils.FileStorageUtils;
+>>>>>>> origin/master:src/com/owncloud/android/operations/RenameFileOperation.java
 
 import android.accounts.Account;
 

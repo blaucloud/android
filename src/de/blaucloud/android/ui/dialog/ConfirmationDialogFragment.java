@@ -24,7 +24,11 @@ import android.content.DialogInterface;
 import android.os.Bundle;
 
 import com.actionbarsherlock.app.SherlockDialogFragment;
+<<<<<<< HEAD:src/de/blaucloud/android/ui/dialog/ConfirmationDialogFragment.java
 import de.blaucloud.android.utils.Log_OC;
+=======
+import com.owncloud.android.lib.common.utils.Log_OC;
+>>>>>>> origin/master:src/com/owncloud/android/ui/dialog/ConfirmationDialogFragment.java
 
 
 public class ConfirmationDialogFragment extends SherlockDialogFragment {

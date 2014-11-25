@@ -39,6 +39,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.actionbarsherlock.app.SherlockFragmentActivity;
+<<<<<<< HEAD:src/de/blaucloud/android/ui/activity/ErrorsWhileCopyingHandlerActivity.java
 import de.blaucloud.android.R;
 import de.blaucloud.android.datamodel.FileDataStorageManager;
 import de.blaucloud.android.datamodel.OCFile;
@@ -46,6 +47,15 @@ import de.blaucloud.android.datamodel.OCFile;
 import de.blaucloud.android.ui.dialog.IndeterminateProgressDialog;
 import de.blaucloud.android.utils.FileStorageUtils;
 import de.blaucloud.android.utils.Log_OC;
+=======
+import com.owncloud.android.R;
+import com.owncloud.android.datamodel.FileDataStorageManager;
+import com.owncloud.android.datamodel.OCFile;
+import com.owncloud.android.lib.common.utils.Log_OC;
+
+import com.owncloud.android.ui.dialog.IndeterminateProgressDialog;
+import com.owncloud.android.utils.FileStorageUtils;
+>>>>>>> origin/master:src/com/owncloud/android/ui/activity/ErrorsWhileCopyingHandlerActivity.java
 
 
 

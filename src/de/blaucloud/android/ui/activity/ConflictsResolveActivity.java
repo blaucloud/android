@@ -19,6 +19,7 @@
 package de.blaucloud.android.ui.activity;
 
 import com.actionbarsherlock.app.ActionBar;
+<<<<<<< HEAD:src/de/blaucloud/android/ui/activity/ConflictsResolveActivity.java
 import de.blaucloud.android.datamodel.OCFile;
 import de.blaucloud.android.files.services.FileUploader;
 import de.blaucloud.android.ui.dialog.ConflictsResolveDialog;
@@ -26,6 +27,15 @@ import de.blaucloud.android.ui.dialog.ConflictsResolveDialog.Decision;
 import de.blaucloud.android.ui.dialog.ConflictsResolveDialog.OnConflictDecisionMadeListener;
 import de.blaucloud.android.utils.DisplayUtils;
 import de.blaucloud.android.utils.Log_OC;
+=======
+import com.owncloud.android.datamodel.OCFile;
+import com.owncloud.android.files.services.FileUploader;
+import com.owncloud.android.lib.common.utils.Log_OC;
+import com.owncloud.android.ui.dialog.ConflictsResolveDialog;
+import com.owncloud.android.ui.dialog.ConflictsResolveDialog.Decision;
+import com.owncloud.android.ui.dialog.ConflictsResolveDialog.OnConflictDecisionMadeListener;
+import com.owncloud.android.utils.DisplayUtils;
+>>>>>>> origin/master:src/com/owncloud/android/ui/activity/ConflictsResolveActivity.java
 
 import android.content.Intent;
 import android.os.Bundle;

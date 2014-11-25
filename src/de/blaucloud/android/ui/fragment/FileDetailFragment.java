@@ -41,6 +41,7 @@ import de.blaucloud.android.files.FileMenuFilter;
 import de.blaucloud.android.files.services.FileDownloader.FileDownloaderBinder;
 import de.blaucloud.android.files.services.FileUploader.FileUploaderBinder;
 import com.owncloud.android.lib.common.network.OnDatatransferProgressListener;
+<<<<<<< HEAD:src/de/blaucloud/android/ui/fragment/FileDetailFragment.java
 import de.blaucloud.android.services.observer.FileObserverService;
 import de.blaucloud.android.ui.activity.FileActivity;
 import de.blaucloud.android.ui.activity.FileDisplayActivity;
@@ -48,6 +49,15 @@ import de.blaucloud.android.ui.dialog.RemoveFileDialogFragment;
 import de.blaucloud.android.ui.dialog.RenameFileDialogFragment;
 import de.blaucloud.android.utils.DisplayUtils;
 import de.blaucloud.android.utils.Log_OC;
+=======
+import com.owncloud.android.lib.common.utils.Log_OC;
+import com.owncloud.android.services.observer.FileObserverService;
+import com.owncloud.android.ui.activity.FileActivity;
+import com.owncloud.android.ui.activity.FileDisplayActivity;
+import com.owncloud.android.ui.dialog.RemoveFileDialogFragment;
+import com.owncloud.android.ui.dialog.RenameFileDialogFragment;
+import com.owncloud.android.utils.DisplayUtils;
+>>>>>>> origin/master:src/com/owncloud/android/ui/fragment/FileDetailFragment.java
 
 
 /**
@@ -187,6 +197,13 @@ public class FileDetailFragment extends FileFragment implements OnClickListener 
         
         // additional restriction for this fragment 
         MenuItem item = menu.findItem(R.id.action_see_details);
+        if (item != null) {
+            item.setVisible(false);
+            item.setEnabled(false);
+        }
+
+        // additional restriction for this fragment
+        item = menu.findItem(R.id.action_move);
         if (item != null) {
             item.setVisible(false);
             item.setEnabled(false);

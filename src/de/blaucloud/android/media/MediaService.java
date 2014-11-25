@@ -37,11 +37,19 @@ import android.widget.Toast;
 
 import java.io.IOException;
 
+<<<<<<< HEAD:src/de/blaucloud/android/media/MediaService.java
 import de.blaucloud.android.R;
 import de.blaucloud.android.datamodel.OCFile;
 import de.blaucloud.android.ui.activity.FileActivity;
 import de.blaucloud.android.ui.activity.FileDisplayActivity;
 import de.blaucloud.android.utils.Log_OC;
+=======
+import com.owncloud.android.R;
+import com.owncloud.android.datamodel.OCFile;
+import com.owncloud.android.lib.common.utils.Log_OC;
+import com.owncloud.android.ui.activity.FileActivity;
+import com.owncloud.android.ui.activity.FileDisplayActivity;
+>>>>>>> origin/master:src/com/owncloud/android/media/MediaService.java
 
 
 /**

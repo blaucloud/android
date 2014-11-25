@@ -31,10 +31,15 @@ import com.owncloud.android.lib.common.OwnCloudClient;
 import com.owncloud.android.lib.common.operations.RemoteOperation;
 import com.owncloud.android.lib.common.operations.RemoteOperationResult;
 import com.owncloud.android.lib.common.operations.RemoteOperationResult.ResultCode;
+import com.owncloud.android.lib.common.utils.Log_OC;
 import com.owncloud.android.lib.resources.status.GetRemoteStatusOperation;
 import com.owncloud.android.lib.resources.status.OwnCloudVersion;
+<<<<<<< HEAD:src/de/blaucloud/android/operations/GetServerInfoOperation.java
 import de.blaucloud.android.operations.DetectAuthenticationMethodOperation.AuthenticationMethod;
 import de.blaucloud.android.utils.Log_OC;
+=======
+import com.owncloud.android.operations.DetectAuthenticationMethodOperation.AuthenticationMethod;
+>>>>>>> origin/master:src/com/owncloud/android/operations/GetServerInfoOperation.java
 
 import android.content.Context;
 

@@ -42,7 +42,11 @@ import android.widget.TextView;
 import com.owncloud.android.lib.common.network.CertificateCombinedException;
 import com.owncloud.android.lib.common.network.NetworkUtils;
 import com.owncloud.android.lib.common.operations.RemoteOperationResult;
+<<<<<<< HEAD:src/de/blaucloud/android/ui/dialog/SslValidatorDialog.java
 import de.blaucloud.android.utils.Log_OC;
+=======
+import com.owncloud.android.lib.common.utils.Log_OC;
+>>>>>>> origin/master:src/com/owncloud/android/ui/dialog/SslValidatorDialog.java
 
 /**
  * Dialog to request the user about a certificate that could not be validated with the certificates store in the system.

@@ -39,7 +39,11 @@ import de.blaucloud.android.R;
 import de.blaucloud.android.authentication.SsoWebViewClient;
 import de.blaucloud.android.authentication.SsoWebViewClient.SsoWebViewClientListener;
 import com.owncloud.android.lib.common.OwnCloudClient;
+<<<<<<< HEAD:src/de/blaucloud/android/ui/dialog/SamlWebViewDialog.java
 import de.blaucloud.android.utils.Log_OC;
+=======
+import com.owncloud.android.lib.common.utils.Log_OC;
+>>>>>>> origin/master:src/com/owncloud/android/ui/dialog/SamlWebViewDialog.java
 
 
 /**

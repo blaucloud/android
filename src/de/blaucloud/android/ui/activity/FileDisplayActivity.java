@@ -61,6 +61,7 @@ import com.actionbarsherlock.view.Menu;
 import com.actionbarsherlock.view.MenuInflater;
 import com.actionbarsherlock.view.MenuItem;
 import com.actionbarsherlock.view.Window;
+<<<<<<< HEAD:src/de/blaucloud/android/ui/activity/FileDisplayActivity.java
 import de.blaucloud.android.MainApp;
 import de.blaucloud.android.R;
 import de.blaucloud.android.datamodel.OCFile;
@@ -68,6 +69,16 @@ import de.blaucloud.android.files.services.FileDownloader;
 import de.blaucloud.android.files.services.FileDownloader.FileDownloaderBinder;
 import de.blaucloud.android.files.services.FileUploader;
 import de.blaucloud.android.files.services.FileUploader.FileUploaderBinder;
+=======
+import com.owncloud.android.BuildConfig;
+import com.owncloud.android.MainApp;
+import com.owncloud.android.R;
+import com.owncloud.android.datamodel.OCFile;
+import com.owncloud.android.files.services.FileDownloader;
+import com.owncloud.android.files.services.FileDownloader.FileDownloaderBinder;
+import com.owncloud.android.files.services.FileUploader;
+import com.owncloud.android.files.services.FileUploader.FileUploaderBinder;
+>>>>>>> origin/master:src/com/owncloud/android/ui/activity/FileDisplayActivity.java
 import com.owncloud.android.lib.common.OwnCloudAccount;
 import com.owncloud.android.lib.common.OwnCloudClient;
 import com.owncloud.android.lib.common.OwnCloudClientManagerFactory;
@@ -77,6 +88,7 @@ import com.owncloud.android.lib.common.network.CertificateCombinedException;
 import com.owncloud.android.lib.common.operations.RemoteOperation;
 import com.owncloud.android.lib.common.operations.RemoteOperationResult;
 import com.owncloud.android.lib.common.operations.RemoteOperationResult.ResultCode;
+<<<<<<< HEAD:src/de/blaucloud/android/ui/activity/FileDisplayActivity.java
 import de.blaucloud.android.operations.CreateFolderOperation;
 import de.blaucloud.android.operations.CreateShareOperation;
 import de.blaucloud.android.operations.RemoveFileOperation;
@@ -99,6 +111,31 @@ import de.blaucloud.android.ui.preview.PreviewVideoActivity;
 import de.blaucloud.android.utils.DisplayUtils;
 import de.blaucloud.android.utils.ErrorMessageAdapter;
 import de.blaucloud.android.utils.Log_OC;
+=======
+import com.owncloud.android.lib.common.utils.Log_OC;
+import com.owncloud.android.operations.CreateFolderOperation;
+import com.owncloud.android.operations.CreateShareOperation;
+import com.owncloud.android.operations.MoveFileOperation;
+import com.owncloud.android.operations.RemoveFileOperation;
+import com.owncloud.android.operations.RenameFileOperation;
+import com.owncloud.android.operations.SynchronizeFileOperation;
+import com.owncloud.android.operations.SynchronizeFolderOperation;
+import com.owncloud.android.operations.UnshareLinkOperation;
+import com.owncloud.android.services.observer.FileObserverService;
+import com.owncloud.android.syncadapter.FileSyncAdapter;
+import com.owncloud.android.ui.dialog.CreateFolderDialogFragment;
+import com.owncloud.android.ui.dialog.SslUntrustedCertDialog;
+import com.owncloud.android.ui.dialog.SslUntrustedCertDialog.OnSslUntrustedCertListener;
+import com.owncloud.android.ui.fragment.FileDetailFragment;
+import com.owncloud.android.ui.fragment.FileFragment;
+import com.owncloud.android.ui.fragment.OCFileListFragment;
+import com.owncloud.android.ui.preview.PreviewImageActivity;
+import com.owncloud.android.ui.preview.PreviewImageFragment;
+import com.owncloud.android.ui.preview.PreviewMediaFragment;
+import com.owncloud.android.ui.preview.PreviewVideoActivity;
+import com.owncloud.android.utils.DisplayUtils;
+import com.owncloud.android.utils.ErrorMessageAdapter;
+>>>>>>> origin/master:src/com/owncloud/android/ui/activity/FileDisplayActivity.java
 
 
 /**
@@ -109,8 +146,9 @@ import de.blaucloud.android.utils.Log_OC;
  */
 
 public class FileDisplayActivity extends HookActivity implements
-FileFragment.ContainerActivity, OnNavigationListener, OnSslUntrustedCertListener {
-
+FileFragment.ContainerActivity, OnNavigationListener, 
+OnSslUntrustedCertListener, OnEnforceableRefreshListener {
+    
     private ArrayAdapter<String> mDirectories;
 
     private SyncBroadcastReceiver mSyncBroadcastReceiver;
@@ -134,6 +172,7 @@ FileFragment.ContainerActivity, OnNavigationListener, OnSslUntrustedCertListener
 
     private static final int ACTION_SELECT_CONTENT_FROM_APPS = 1;
     private static final int ACTION_SELECT_MULTIPLE_FILES = 2;
+    public static final int ACTION_MOVE_FILES = 3;
 
     private static final String TAG = FileDisplayActivity.class.getSimpleName();
 
@@ -196,6 +235,8 @@ FileFragment.ContainerActivity, OnNavigationListener, OnSslUntrustedCertListener
         getSupportActionBar().setHomeButtonEnabled(true);       // mandatory since Android ICS, according to the official documentation
         setSupportProgressBarIndeterminateVisibility(mSyncInProgress /*|| mRefreshSharesInProgress*/);    // always AFTER setContentView(...) ; to work around bug in its implementation
         
+        setBackgroundText();
+
         Log_OC.d(TAG, "onCreate() end");
     }
     
@@ -243,7 +284,7 @@ FileFragment.ContainerActivity, OnNavigationListener, OnSslUntrustedCertListener
                 Log_OC.e(TAG, "Initializing Fragments in onAccountChanged..");
                 initFragmentsWithFile();
                 if (file.isFolder()) {
-                    startSyncFolderOperation(file);
+                    startSyncFolderOperation(file, false);
                 }
                 
             } else {
@@ -284,7 +325,7 @@ FileFragment.ContainerActivity, OnNavigationListener, OnSslUntrustedCertListener
             if (listOfFiles != null) {
                 listOfFiles.listDirectory(getCurrentDir());   
             } else {
-                Log.e(TAG, "Still have a chance to lose the initializacion of list fragment >(");
+                Log_OC.e(TAG, "Still have a chance to lose the initializacion of list fragment >(");
             }
             
             /// Second fragment
@@ -300,12 +341,12 @@ FileFragment.ContainerActivity, OnNavigationListener, OnSslUntrustedCertListener
             }
 
         } else {
-            Log.wtf(TAG, "initFragments() called with invalid NULLs!");
+            Log_OC.wtf(TAG, "initFragments() called with invalid NULLs!");
             if (getAccount() == null) {
-                Log.wtf(TAG, "\t account is NULL");
+                Log_OC.wtf(TAG, "\t account is NULL");
             }
             if (getFile() == null) {
-                Log.wtf(TAG, "\t file is NULL");
+                Log_OC.wtf(TAG, "\t file is NULL");
             }
         }
     }
@@ -444,6 +485,16 @@ FileFragment.ContainerActivity, OnNavigationListener, OnSslUntrustedCertListener
     }
 
     @Override
+    public boolean onPrepareOptionsMenu(Menu menu) {
+        if (BuildConfig.DEBUG) {
+            menu.findItem(R.id.action_logger).setVisible(true);
+        } else {
+            menu.findItem(R.id.action_logger).setVisible(false);
+        }
+        return super.onPrepareOptionsMenu(menu);
+    }
+
+    @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getSherlock().getMenuInflater();
         inflater.inflate(R.menu.main_menu, menu);
@@ -471,6 +522,11 @@ FileFragment.ContainerActivity, OnNavigationListener, OnSslUntrustedCertListener
         case R.id.action_settings: {
             Intent settingsIntent = new Intent(this, Preferences.class);
             startActivity(settingsIntent);
+            break;
+        }
+        case R.id.action_logger: {
+            Intent loggerIntent = new Intent(getApplicationContext(),LogHistoryActivity.class);
+            startActivity(loggerIntent);
             break;
         }
         case android.R.id.home: {
@@ -548,6 +604,20 @@ FileFragment.ContainerActivity, OnNavigationListener, OnSslUntrustedCertListener
         } else if (requestCode == ACTION_SELECT_MULTIPLE_FILES && (resultCode == RESULT_OK || resultCode == UploadFilesActivity.RESULT_OK_AND_MOVE)) {
             requestMultipleUpload(data, resultCode);
 
+        } else if (requestCode == ACTION_MOVE_FILES && (resultCode == RESULT_OK || 
+                resultCode == MoveActivity.RESULT_OK_AND_MOVE)){
+
+            final Intent fData = data;
+            final int fResultCode = resultCode; 
+            getHandler().postDelayed(
+                new Runnable() {
+                    @Override
+                    public void run() {
+                        requestMoveOperation(fData, fResultCode);
+                    }
+                }, 
+                DELAY_TO_REQUEST_OPERATION_ON_ACTIVITY_RESULTS
+            );
         }
     }
 
@@ -626,6 +696,18 @@ FileFragment.ContainerActivity, OnNavigationListener, OnSslUntrustedCertListener
         if (resultCode == UploadFilesActivity.RESULT_OK_AND_MOVE)
             i.putExtra(FileUploader.KEY_LOCAL_BEHAVIOUR, FileUploader.LOCAL_BEHAVIOUR_MOVE);
         startService(i);
+    }
+
+    /**
+     * Request the operation for moving the file/folder from one path to another
+     * 
+     * @param data              Intent received
+     * @param resultCode        Result code received
+     */
+    private void requestMoveOperation(Intent data, int resultCode) {
+        OCFile folderToMoveAt = (OCFile) data.getParcelableExtra(MoveActivity.EXTRA_CURRENT_FOLDER);
+        OCFile targetFile = (OCFile) data.getParcelableExtra(MoveActivity.EXTRA_TARGET_FILE);
+        getFileOperationsHelper().moveFile(folderToMoveAt, targetFile);
     }
 
     @Override
@@ -960,6 +1042,8 @@ FileFragment.ContainerActivity, OnNavigationListener, OnSslUntrustedCertListener
                     removeStickyBroadcast(intent);
                     Log_OC.d(TAG, "Setting progress visibility to " + mSyncInProgress);
                     setSupportProgressBarIndeterminateVisibility(mSyncInProgress /*|| mRefreshSharesInProgress*/);
+
+                    setBackgroundText();
                         
                 }
                 
@@ -976,6 +1060,23 @@ FileFragment.ContainerActivity, OnNavigationListener, OnSslUntrustedCertListener
         }
     }
     
+    /**
+     * Show a text message on screen view for notifying user if content is
+     * loading or folder is empty
+     */
+    private void setBackgroundText() {
+        OCFileListFragment ocFileListFragment = getListOfFilesFragment();
+        if (ocFileListFragment != null) {
+            int message = R.string.file_list_loading;
+            if (!mSyncInProgress) {
+                // In case file list is empty
+                message = R.string.file_list_empty;
+            }
+            ocFileListFragment.setMessageForEmptyList(getString(message));
+        } else {
+            Log_OC.e(TAG, "OCFileListFragment is null");
+        }
+    }
 
     /**
      * Once the file upload has finished -> update view
@@ -1100,7 +1201,7 @@ FileFragment.ContainerActivity, OnNavigationListener, OnSslUntrustedCertListener
             OCFile root = getStorageManager().getFileByPath(OCFile.ROOT_PATH);
             listOfFiles.listDirectory(root);
             setFile(listOfFiles.getCurrentFile());
-            startSyncFolderOperation(root);
+            startSyncFolderOperation(root, false);
         }
         cleanSecondFragment();
     }
@@ -1115,7 +1216,7 @@ FileFragment.ContainerActivity, OnNavigationListener, OnSslUntrustedCertListener
             setNavigationListWithFolder(folder);
             listOfFiles.listDirectory(folder);
             setFile(listOfFiles.getCurrentFile());
-            startSyncFolderOperation(folder);
+            startSyncFolderOperation(folder, false);
         } else {
             Log_OC.e(TAG, "Unexpected null when accessing list fragment");
         }
@@ -1134,7 +1235,7 @@ FileFragment.ContainerActivity, OnNavigationListener, OnSslUntrustedCertListener
         cleanSecondFragment();
         
         // Sync Folder
-        startSyncFolderOperation(directory);
+        startSyncFolderOperation(directory, false);
         
     }
 
@@ -1251,7 +1352,7 @@ FileFragment.ContainerActivity, OnNavigationListener, OnSslUntrustedCertListener
 
     @Override
     public void onSavedCertificate() {
-        startSyncFolderOperation(getCurrentDir());                
+        startSyncFolderOperation(getCurrentDir(), false);
     }
 
 
@@ -1294,7 +1395,9 @@ FileFragment.ContainerActivity, OnNavigationListener, OnSslUntrustedCertListener
         } else if (operation instanceof UnshareLinkOperation) {
             onUnshareLinkOperationFinish((UnshareLinkOperation)operation, result);
         
-        } 
+        } else if (operation instanceof MoveFileOperation) {
+            onMoveFileOperationFinish((MoveFileOperation)operation, result);
+        }
         
     }
 
@@ -1373,12 +1476,13 @@ FileFragment.ContainerActivity, OnNavigationListener, OnSslUntrustedCertListener
     
     
     /**
-     * Updates the view associated to the activity after the finish of an operation trying create a new folder
+     * Updates the view associated to the activity after the finish of an operation trying to move a 
+     * file.
      * 
-     * @param operation     Creation operation performed.
-     * @param result        Result of the creation.
+     * @param operation     Move operation performed.
+     * @param result        Result of the move operation.
      */
-    private void onCreateFolderOperationFinish(CreateFolderOperation operation, RemoteOperationResult result) {
+    private void onMoveFileOperationFinish(MoveFileOperation operation, RemoteOperationResult result) {
         if (result.isSuccess()) {
             dismissLoadingDialog();
             refreshListOfFilesFragment();
@@ -1465,6 +1569,30 @@ FileFragment.ContainerActivity, OnNavigationListener, OnSslUntrustedCertListener
         }
     }
 
+    /**
+     * Updates the view associated to the activity after the finish of an operation trying create a new folder
+     * 
+     * @param operation     Creation operation performed.
+     * @param result        Result of the creation.
+     */
+    private void onCreateFolderOperationFinish(CreateFolderOperation operation, RemoteOperationResult result) {
+        if (result.isSuccess()) {
+            dismissLoadingDialog();
+            refreshListOfFilesFragment();
+        } else {
+            dismissLoadingDialog();
+            try {
+                Toast msg = Toast.makeText(FileDisplayActivity.this, 
+                        ErrorMessageAdapter.getErrorCauseMessage(result, operation, getResources()), 
+                        Toast.LENGTH_LONG); 
+                msg.show();
+
+            } catch (NotFoundException e) {
+                Log_OC.e(TAG, "Error while trying to show fail message " , e);
+            }
+        }
+    }
+
     
     /**
      * {@inheritDoc}
@@ -1512,7 +1640,7 @@ FileFragment.ContainerActivity, OnNavigationListener, OnSslUntrustedCertListener
         return null;
     }
     
-    public void startSyncFolderOperation(OCFile folder) {
+    public void startSyncFolderOperation(OCFile folder, boolean ignoreETag) {
         long currentSyncTime = System.currentTimeMillis(); 
         
         mSyncInProgress = true;
@@ -1522,6 +1650,7 @@ FileFragment.ContainerActivity, OnNavigationListener, OnSslUntrustedCertListener
                                                                         currentSyncTime, 
                                                                         false,
                                                                         getFileOperationsHelper().isSharedSupported(),
+                                                                        ignoreETag,
                                                                         getStorageManager(), 
                                                                         getAccount(), 
                                                                         getApplicationContext()
@@ -1529,6 +1658,8 @@ FileFragment.ContainerActivity, OnNavigationListener, OnSslUntrustedCertListener
         synchFolderOp.execute(getAccount(), this, null, null);
         
         setSupportProgressBarIndeterminateVisibility(true);
+
+        setBackgroundText();
     }
 
     /**
@@ -1630,5 +1761,26 @@ FileFragment.ContainerActivity, OnNavigationListener, OnSslUntrustedCertListener
         }
         onTransferStateChanged(file, false, false);
     }
-    
+
+    @Override
+    public void onRefresh(boolean ignoreETag) {
+        refreshList(ignoreETag);
+    }
+
+    @Override
+    public void onRefresh() {
+        refreshList(true);
+    }
+
+    private void refreshList(boolean ignoreETag) {
+        OCFileListFragment listOfFiles = getListOfFilesFragment();
+        if (listOfFiles != null) {
+            OCFile folder = listOfFiles.getCurrentFile();
+            if (folder != null) {
+                /*mFile = mContainerActivity.getStorageManager().getFileById(mFile.getFileId());
+                listDirectory(mFile);*/
+                startSyncFolderOperation(folder, ignoreETag);
+            }
+        }
+    }
 }

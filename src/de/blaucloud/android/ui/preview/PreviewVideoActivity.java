@@ -17,11 +17,18 @@
 
 package de.blaucloud.android.ui.preview;
 
+<<<<<<< HEAD:src/de/blaucloud/android/ui/preview/PreviewVideoActivity.java
 import de.blaucloud.android.R;
 import de.blaucloud.android.datamodel.OCFile;
 import de.blaucloud.android.media.MediaService;
 import de.blaucloud.android.ui.activity.FileActivity;
 import de.blaucloud.android.utils.Log_OC;
+=======
+import com.owncloud.android.R;
+import com.owncloud.android.datamodel.OCFile;
+import com.owncloud.android.media.MediaService;
+import com.owncloud.android.ui.activity.FileActivity;
+>>>>>>> origin/master:src/com/owncloud/android/ui/preview/PreviewVideoActivity.java
 
 import android.accounts.Account;
 import android.app.AlertDialog;
@@ -38,6 +45,7 @@ import android.widget.VideoView;
 
 import com.owncloud.android.lib.common.accounts.AccountUtils;
 import com.owncloud.android.lib.common.accounts.AccountUtils.AccountNotFoundException;
+import com.owncloud.android.lib.common.utils.Log_OC;
 
 /**
  *  Activity implementing a basic video player.

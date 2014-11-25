@@ -18,9 +18,15 @@
 package de.blaucloud.android.media;
 
 
+<<<<<<< HEAD:src/de/blaucloud/android/media/MediaServiceBinder.java
 import de.blaucloud.android.datamodel.OCFile;
 import de.blaucloud.android.media.MediaService.State;
 import de.blaucloud.android.utils.Log_OC;
+=======
+import com.owncloud.android.datamodel.OCFile;
+import com.owncloud.android.lib.common.utils.Log_OC;
+import com.owncloud.android.media.MediaService.State;
+>>>>>>> origin/master:src/com/owncloud/android/media/MediaServiceBinder.java
 
 import android.accounts.Account;
 import android.content.Intent;

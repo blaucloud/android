@@ -29,6 +29,7 @@ import android.media.MediaPlayer;
 import android.media.MediaPlayer.OnCompletionListener;
 import android.media.MediaPlayer.OnErrorListener;
 import android.media.MediaPlayer.OnPreparedListener;
+import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.IBinder;
@@ -44,6 +45,7 @@ import android.widget.VideoView;
 import com.actionbarsherlock.view.Menu;
 import com.actionbarsherlock.view.MenuInflater;
 import com.actionbarsherlock.view.MenuItem;
+<<<<<<< HEAD:src/de/blaucloud/android/ui/preview/PreviewMediaFragment.java
 import de.blaucloud.android.R;
 import de.blaucloud.android.datamodel.OCFile;
 import de.blaucloud.android.files.FileMenuFilter;
@@ -55,6 +57,19 @@ import de.blaucloud.android.ui.dialog.ConfirmationDialogFragment;
 import de.blaucloud.android.ui.dialog.RemoveFileDialogFragment;
 import de.blaucloud.android.ui.fragment.FileFragment;
 import de.blaucloud.android.utils.Log_OC;
+=======
+import com.owncloud.android.R;
+import com.owncloud.android.datamodel.OCFile;
+import com.owncloud.android.files.FileMenuFilter;
+import com.owncloud.android.lib.common.utils.Log_OC;
+import com.owncloud.android.media.MediaControlView;
+import com.owncloud.android.media.MediaService;
+import com.owncloud.android.media.MediaServiceBinder;
+import com.owncloud.android.ui.activity.FileActivity;
+import com.owncloud.android.ui.dialog.ConfirmationDialogFragment;
+import com.owncloud.android.ui.dialog.RemoveFileDialogFragment;
+import com.owncloud.android.ui.fragment.FileFragment;
+>>>>>>> origin/master:src/com/owncloud/android/ui/preview/PreviewMediaFragment.java
 
 
 /**
@@ -289,6 +304,13 @@ public class PreviewMediaFragment extends FileFragment implements
             item.setVisible(false);
             item.setEnabled(false);
         }
+
+        // additional restriction for this fragment
+        item = menu.findItem(R.id.action_move);
+        if (item != null) {
+            item.setVisible(false);
+            item.setEnabled(false);
+        }
     }
     
     
@@ -365,13 +387,15 @@ public class PreviewMediaFragment extends FileFragment implements
         mVideoPreview.setOnErrorListener(mVideoHelper);
     }
     
+    @SuppressWarnings("static-access")
     private void playVideo() {
         // create and prepare control panel for the user
         mMediaController.setMediaPlayer(mVideoPreview);
         
         // load the video file in the video player ; 
         // when done, VideoHelper#onPrepared() will be called
-        mVideoPreview.setVideoPath(getFile().getStoragePath()); 
+        Uri uri = Uri.parse(getFile().getStoragePath());
+        mVideoPreview.setVideoPath(uri.encode(getFile().getStoragePath()));
     }
     
 

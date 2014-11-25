@@ -34,8 +34,13 @@ import com.owncloud.android.lib.common.operations.RemoteOperationResult;
 import de.blaucloud.android.operations.SynchronizeFolderOperation;
 import de.blaucloud.android.operations.UpdateOCVersionOperation;
 import com.owncloud.android.lib.common.operations.RemoteOperationResult.ResultCode;
+<<<<<<< HEAD:src/de/blaucloud/android/syncadapter/FileSyncAdapter.java
 import de.blaucloud.android.ui.activity.ErrorsWhileCopyingHandlerActivity;
 import de.blaucloud.android.utils.Log_OC;
+=======
+import com.owncloud.android.lib.common.utils.Log_OC;
+import com.owncloud.android.ui.activity.ErrorsWhileCopyingHandlerActivity;
+>>>>>>> origin/master:src/com/owncloud/android/syncadapter/FileSyncAdapter.java
 
 import android.accounts.Account;
 import android.accounts.AccountsException;
@@ -264,6 +269,7 @@ public class FileSyncAdapter extends AbstractOwnCloudSyncAdapter {
                                                                                     mCurrentSyncTime, 
                                                                                     true,
                                                                                     mIsShareSupported,
+                                                                                    false,
                                                                                     getStorageManager(), 
                                                                                     getAccount(), 
                                                                                     getContext()

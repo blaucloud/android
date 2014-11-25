@@ -29,7 +29,11 @@ import android.os.Handler;
 import android.widget.Toast;
 
 import com.owncloud.android.lib.common.accounts.AccountTypeUtils;
+<<<<<<< HEAD:src/de/blaucloud/android/authentication/AccountAuthenticator.java
 import de.blaucloud.android.utils.Log_OC;
+=======
+import com.owncloud.android.lib.common.utils.Log_OC;
+>>>>>>> origin/master:src/com/owncloud/android/authentication/AccountAuthenticator.java
 
 
 /**

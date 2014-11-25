@@ -29,9 +29,14 @@ import com.owncloud.android.lib.common.OwnCloudClient;
 import com.owncloud.android.lib.common.operations.OperationCancelledException;
 import com.owncloud.android.lib.common.operations.RemoteOperation;
 import com.owncloud.android.lib.common.operations.RemoteOperationResult;
+import com.owncloud.android.lib.common.utils.Log_OC;
 import com.owncloud.android.lib.resources.files.DownloadRemoteFileOperation;
+<<<<<<< HEAD:src/de/blaucloud/android/operations/DownloadFileOperation.java
 import de.blaucloud.android.utils.FileStorageUtils;
 import de.blaucloud.android.utils.Log_OC;
+=======
+import com.owncloud.android.utils.FileStorageUtils;
+>>>>>>> origin/master:src/com/owncloud/android/operations/DownloadFileOperation.java
 
 import android.accounts.Account;
 import android.webkit.MimeTypeMap;

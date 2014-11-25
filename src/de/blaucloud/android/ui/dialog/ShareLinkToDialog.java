@@ -40,12 +40,21 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.actionbarsherlock.app.SherlockDialogFragment;
+<<<<<<< HEAD:src/de/blaucloud/android/ui/dialog/ShareLinkToDialog.java
 import de.blaucloud.android.R;
 import de.blaucloud.android.datamodel.OCFile;
 import de.blaucloud.android.ui.activity.ComponentsGetter;
 import de.blaucloud.android.ui.activity.CopyToClipboardActivity;
 import de.blaucloud.android.ui.activity.FileActivity;
 import de.blaucloud.android.utils.Log_OC;
+=======
+import com.owncloud.android.R;
+import com.owncloud.android.datamodel.OCFile;
+import com.owncloud.android.lib.common.utils.Log_OC;
+import com.owncloud.android.ui.activity.ComponentsGetter;
+import com.owncloud.android.ui.activity.CopyToClipboardActivity;
+import com.owncloud.android.ui.activity.FileActivity;
+>>>>>>> origin/master:src/com/owncloud/android/ui/dialog/ShareLinkToDialog.java
 
 /**
  * Dialog showing a list activities able to resolve a given Intent, 

@@ -18,8 +18,13 @@
 
 package de.blaucloud.android.files;
 
+<<<<<<< HEAD:src/de/blaucloud/android/files/BootupBroadcastReceiver.java
 import de.blaucloud.android.services.observer.FileObserverService;
 import de.blaucloud.android.utils.Log_OC;
+=======
+import com.owncloud.android.lib.common.utils.Log_OC;
+import com.owncloud.android.services.observer.FileObserverService;
+>>>>>>> origin/master:src/com/owncloud/android/files/BootupBroadcastReceiver.java
 
 import android.content.BroadcastReceiver;
 import android.content.Context;

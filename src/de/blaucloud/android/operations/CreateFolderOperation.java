@@ -23,9 +23,15 @@ import com.owncloud.android.lib.resources.files.CreateRemoteFolderOperation;
 import com.owncloud.android.lib.common.operations.OnRemoteOperationListener;
 import com.owncloud.android.lib.common.operations.RemoteOperation;
 import com.owncloud.android.lib.common.operations.RemoteOperationResult;
+<<<<<<< HEAD:src/de/blaucloud/android/operations/CreateFolderOperation.java
 import de.blaucloud.android.operations.common.SyncOperation;
 import de.blaucloud.android.utils.FileStorageUtils;
 import de.blaucloud.android.utils.Log_OC;
+=======
+import com.owncloud.android.lib.common.utils.Log_OC;
+import com.owncloud.android.operations.common.SyncOperation;
+import com.owncloud.android.utils.FileStorageUtils;
+>>>>>>> origin/master:src/com/owncloud/android/operations/CreateFolderOperation.java
 
 
 /**

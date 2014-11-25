@@ -36,11 +36,19 @@ import com.actionbarsherlock.app.SherlockDialogFragment;
 import de.blaucloud.android.R;
 import com.owncloud.android.lib.common.network.CertificateCombinedException;
 import com.owncloud.android.lib.common.network.NetworkUtils;
+<<<<<<< HEAD:src/de/blaucloud/android/ui/dialog/SslUntrustedCertDialog.java
 import de.blaucloud.android.ui.adapter.CertificateCombinedExceptionViewAdapter;
 import de.blaucloud.android.ui.adapter.SslCertificateViewAdapter;
 import de.blaucloud.android.ui.adapter.SslErrorViewAdapter;
 import de.blaucloud.android.ui.adapter.X509CertificateViewAdapter;
 import de.blaucloud.android.utils.Log_OC;
+=======
+import com.owncloud.android.lib.common.utils.Log_OC;
+import com.owncloud.android.ui.adapter.CertificateCombinedExceptionViewAdapter;
+import com.owncloud.android.ui.adapter.SslCertificateViewAdapter;
+import com.owncloud.android.ui.adapter.SslErrorViewAdapter;
+import com.owncloud.android.ui.adapter.X509CertificateViewAdapter;
+>>>>>>> origin/master:src/com/owncloud/android/ui/dialog/SslUntrustedCertDialog.java
 
 /**
  * Dialog to show information about an untrusted certificate and allow the user

@@ -45,11 +45,20 @@ import android.os.Process;
 import android.support.v4.app.NotificationCompat;
 import android.webkit.MimeTypeMap;
 
+<<<<<<< HEAD:src/de/blaucloud/android/files/services/FileUploader.java
 import de.blaucloud.android.R;
 import de.blaucloud.android.authentication.AuthenticatorActivity;
 import de.blaucloud.android.datamodel.FileDataStorageManager;
 import de.blaucloud.android.datamodel.OCFile;
 import de.blaucloud.android.db.DbHandler;
+=======
+import com.owncloud.android.R;
+import com.owncloud.android.authentication.AccountUtils;
+import com.owncloud.android.authentication.AuthenticatorActivity;
+import com.owncloud.android.datamodel.FileDataStorageManager;
+import com.owncloud.android.datamodel.OCFile;
+import com.owncloud.android.db.DbHandler;
+>>>>>>> origin/master:src/com/owncloud/android/files/services/FileUploader.java
 import com.owncloud.android.lib.common.OwnCloudAccount;
 import com.owncloud.android.lib.common.OwnCloudClient;
 import com.owncloud.android.lib.common.OwnCloudClientManagerFactory;
@@ -58,11 +67,13 @@ import com.owncloud.android.lib.common.network.OnDatatransferProgressListener;
 import com.owncloud.android.lib.common.operations.RemoteOperation;
 import com.owncloud.android.lib.common.operations.RemoteOperationResult;
 import com.owncloud.android.lib.common.operations.RemoteOperationResult.ResultCode;
+import com.owncloud.android.lib.common.utils.Log_OC;
 import com.owncloud.android.lib.resources.files.ExistenceCheckRemoteOperation;
 import com.owncloud.android.lib.resources.files.FileUtils;
 import com.owncloud.android.lib.resources.files.ReadRemoteFileOperation;
 import com.owncloud.android.lib.resources.files.RemoteFile;
 import com.owncloud.android.lib.resources.status.OwnCloudVersion;
+<<<<<<< HEAD:src/de/blaucloud/android/files/services/FileUploader.java
 import de.blaucloud.android.notifications.NotificationBuilderWithProgressBar;
 import de.blaucloud.android.notifications.NotificationDelayer;
 import de.blaucloud.android.operations.CreateFolderOperation;
@@ -72,6 +83,16 @@ import de.blaucloud.android.ui.activity.FileActivity;
 import de.blaucloud.android.ui.activity.FileDisplayActivity;
 import de.blaucloud.android.utils.ErrorMessageAdapter;
 import de.blaucloud.android.utils.Log_OC;
+=======
+import com.owncloud.android.notifications.NotificationBuilderWithProgressBar;
+import com.owncloud.android.notifications.NotificationDelayer;
+import com.owncloud.android.operations.CreateFolderOperation;
+import com.owncloud.android.operations.UploadFileOperation;
+import com.owncloud.android.operations.common.SyncOperation;
+import com.owncloud.android.ui.activity.FileActivity;
+import com.owncloud.android.ui.activity.FileDisplayActivity;
+import com.owncloud.android.utils.ErrorMessageAdapter;
+>>>>>>> origin/master:src/com/owncloud/android/files/services/FileUploader.java
 
 
 
@@ -185,6 +206,9 @@ public class FileUploader extends Service implements OnDatatransferProgressListe
             return Service.START_NOT_STICKY;
         }
         Account account = intent.getParcelableExtra(KEY_ACCOUNT);
+        if (!AccountUtils.exists(account, getApplicationContext())) {
+            return Service.START_NOT_STICKY;
+        }
 
         String[] localPaths = null, remotePaths = null, mimeTypes = null;
         OCFile[] files = null;
@@ -626,7 +650,7 @@ public class FileUploader extends Service implements OnDatatransferProgressListe
               // coincidence; nothing else is needed, the storagePath is right
               // in the instance returned by mCurrentUpload.getFile()
         }
-
+        file.setNeedsUpdateThumbnail(true);
         mStorageManager.saveFile(file);
     }
 
@@ -637,6 +661,7 @@ public class FileUploader extends Service implements OnDatatransferProgressListe
         file.setModificationTimestamp(remoteFile.getModifiedTimestamp());
         file.setModificationTimestampAtLastSyncForData(remoteFile.getModifiedTimestamp());
         // file.setEtag(remoteFile.getEtag());    // TODO Etag, where available
+        file.setRemoteId(remoteFile.getRemoteId());
     }
 
     private OCFile obtainNewOCFileToUpload(String remotePath, String localPath, String mimeType,
@@ -789,7 +814,7 @@ public class FileUploader extends Service implements OnDatatransferProgressListe
                                 uploadResult.getCode();
                         Log_OC.e(TAG, message + " Http-Code: " + uploadResult.getHttpCode());
                         if (uploadResult.getCode() == ResultCode.QUOTA_EXCEEDED) {
-                            message = getString(R.string.failed_upload_quota_exceeded_text);
+                            //message = getString(R.string.failed_upload_quota_exceeded_text);
                             if (db.updateFileState(
                                     upload.getOriginalStoragePath(), 
                                     DbHandler.UPLOAD_STATUS_UPLOAD_FAILED,

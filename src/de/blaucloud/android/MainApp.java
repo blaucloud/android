@@ -16,11 +16,13 @@
  */
 package de.blaucloud.android;
 
-import com.owncloud.android.lib.common.OwnCloudClientManagerFactory;
-import com.owncloud.android.lib.common.OwnCloudClientManagerFactory.Policy;
-
 import android.app.Application;
 import android.content.Context;
+
+import com.owncloud.android.datamodel.ThumbnailsCacheManager;
+import com.owncloud.android.lib.common.OwnCloudClientManagerFactory;
+import com.owncloud.android.lib.common.OwnCloudClientManagerFactory.Policy;
+import com.owncloud.android.lib.common.utils.Log_OC;
 /**
  * Main Application of the project
  * 
@@ -54,6 +56,19 @@ public class MainApp extends Application {
             OwnCloudClientManagerFactory.setDefaultPolicy(Policy.ALWAYS_NEW_CLIENT);
         }
         
+        // initialise thumbnails cache on background thread
+        new ThumbnailsCacheManager.InitDiskCacheTask().execute();
+        
+        if (BuildConfig.DEBUG) {
+
+            String dataFolder = getDataFolder();
+
+            // Set folder for store logs
+            Log_OC.setLogDataFolder(dataFolder);
+
+            Log_OC.startLogging();
+            Log_OC.d("Debug", "start logging");
+        }
     }
 
     public static Context getAppContext() {
@@ -66,7 +81,7 @@ public class MainApp extends Application {
     public static String getAccountType() {
         return getAppContext().getResources().getString(R.string.account_type);
     }
-    
+
     //  From AccountAuthenticator 
     //  public static final String AUTHORITY = "org.owncloud";
     public static String getAuthority() {

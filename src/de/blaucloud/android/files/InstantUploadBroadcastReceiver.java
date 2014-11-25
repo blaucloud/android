@@ -20,12 +20,21 @@ package de.blaucloud.android.files;
 
 import java.io.File;
 
+<<<<<<< HEAD:src/de/blaucloud/android/files/InstantUploadBroadcastReceiver.java
 import de.blaucloud.android.MainApp;
 import de.blaucloud.android.authentication.AccountUtils;
 import de.blaucloud.android.db.DbHandler;
 import de.blaucloud.android.files.services.FileUploader;
 import de.blaucloud.android.utils.FileStorageUtils;
 import de.blaucloud.android.utils.Log_OC;
+=======
+import com.owncloud.android.MainApp;
+import com.owncloud.android.authentication.AccountUtils;
+import com.owncloud.android.db.DbHandler;
+import com.owncloud.android.files.services.FileUploader;
+import com.owncloud.android.lib.common.utils.Log_OC;
+import com.owncloud.android.utils.FileStorageUtils;
+>>>>>>> origin/master:src/com/owncloud/android/files/InstantUploadBroadcastReceiver.java
 
 
 import android.accounts.Account;

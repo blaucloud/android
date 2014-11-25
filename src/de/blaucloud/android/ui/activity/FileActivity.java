@@ -52,6 +52,7 @@ import com.owncloud.android.lib.common.operations.OnRemoteOperationListener;
 import com.owncloud.android.lib.common.operations.RemoteOperation;
 import com.owncloud.android.lib.common.operations.RemoteOperationResult;
 import com.owncloud.android.lib.common.operations.RemoteOperationResult.ResultCode;
+<<<<<<< HEAD:src/de/blaucloud/android/ui/activity/FileActivity.java
 import de.blaucloud.android.operations.CreateShareOperation;
 import de.blaucloud.android.operations.UnshareLinkOperation;
 
@@ -60,6 +61,16 @@ import de.blaucloud.android.services.OperationsService.OperationsServiceBinder;
 import de.blaucloud.android.ui.dialog.LoadingDialog;
 import de.blaucloud.android.utils.ErrorMessageAdapter;
 import de.blaucloud.android.utils.Log_OC;
+=======
+import com.owncloud.android.lib.common.utils.Log_OC;
+import com.owncloud.android.operations.CreateShareOperation;
+import com.owncloud.android.operations.UnshareLinkOperation;
+
+import com.owncloud.android.services.OperationsService;
+import com.owncloud.android.services.OperationsService.OperationsServiceBinder;
+import com.owncloud.android.ui.dialog.LoadingDialog;
+import com.owncloud.android.utils.ErrorMessageAdapter;
+>>>>>>> origin/master:src/com/owncloud/android/ui/activity/FileActivity.java
 
 
 /**
@@ -79,6 +90,8 @@ implements OnRemoteOperationListener, ComponentsGetter {
     
     private static final String DIALOG_WAIT_TAG = "DIALOG_WAIT";
     private static final String KEY_WAITING_FOR_OP_ID = "WAITING_FOR_OP_ID";;
+    
+    protected static final long DELAY_TO_REQUEST_OPERATION_ON_ACTIVITY_RESULTS = 200;
     
     
     /** OwnCloud {@link Account} where the main {@link OCFile} handled by the activity is located. */
@@ -506,11 +519,12 @@ implements OnRemoteOperationListener, ComponentsGetter {
     }
     
     
-    private void updateFileFromDB(){
-      OCFile file = getStorageManager().getFileByPath(getFile().getRemotePath());
-      if (file != null) {
-          setFile(file);
-      }
+    protected void updateFileFromDB(){
+        OCFile file = getFile();
+        if (file != null) {
+            file = getStorageManager().getFileByPath(file.getRemotePath());
+            setFile(file);
+        }
     }
     
     /**
