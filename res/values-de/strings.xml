@@ -33,10 +33,10 @@
   <string name="recommend_subject">Probiere %1$s auf Deinem Smartphone!</string>
   <string name="recommend_text">\"Ich möchte Dich zum Benutzen von %1$s auf Deinem Smartphone einladen!\nLade es hier herunter: %2$s\"</string>
   <string name="auth_check_server">Überprüfe den Server</string>
-  <string name="auth_host_url">Server-Adresse https://…</string>
+  <string name="auth_host_url">Server z.B. https://benutzer.blaucloud.de</string>
   <string name="auth_username">Benutzername</string>
   <string name="auth_password">Passwort</string>
-  <string name="auth_register">Ist %1$s neu für dich?</string>
+  <string name="auth_register">Kostenlos 2GB blaucloud Speicher bekommen?</string>
   <string name="sync_string_files">Dateien</string>
   <string name="setup_btn_connect">Verbinden</string>
   <string name="uploader_btn_upload_text">Hochladen</string>

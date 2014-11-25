@@ -212,7 +212,7 @@
 		    android:paddingBottom="5dp"
 		    android:paddingTop="5dp"
 		    android:text="@string/auth_register"
-		    android:textColor="#0000FF"/>
+		    android:textColor="#FFFFFF"/>
 	</LinearLayout>
 		
 </RelativeLayout>

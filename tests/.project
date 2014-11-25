@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>owncloud-android-tests</name>
+	<name>blaucloud-android-tests</name>
 	<comment></comment>
 	<projects>
-		<project>owncloud-android</project>
+		<project>blaucloud-android</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

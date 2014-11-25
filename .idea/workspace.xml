@@ -1,0 +1,1197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4cad14e5-d665-485b-b560-b1069ace4ef2" name="Default" comment="">
+      <change type="DELETED" beforePath="C:\Users\Uli\Documents\Projekte\android\tests\src\com\owncloud\android\test\AccountUtilsTest.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Uli\Documents\Projekte\android\tests\src\com\owncloud\android\test\FileContentProviderTest.java" afterPath="" />
+      <change type="MOVED" beforePath="C:\Users\Uli\Documents\Projekte\android\src\com\owncloud\android\MainApp.java" afterPath="$PROJECT_DIR$/src/de/blaucloud/android/MainApp.java" />
+      <change type="MOVED" beforePath="C:\Users\Uli\Documents\Projekte\android\src\com\owncloud\android\authentication\AccountAuthenticator.java" afterPath="$PROJECT_DIR$/src/de/blaucloud/android/authentication/AccountAuthenticator.java" />
+      <change type="MOVED" beforePath="C:\Users\Uli\Documents\Projekte\android\src\com\owncloud\android\authentication\AccountAuthenticatorActivity.java" afterPath="$PROJECT_DIR$/src/de/blaucloud/android/authentication/AccountAuthenticatorActivity.java" />
+      <change type="MOVED" beforePath="C:\Users\Uli\Documents\Projekte\android\src\com\owncloud\android\authentication\AccountAuthenticatorService.java" afterPath="$PROJECT_DIR$/src/de/blaucloud/android/authentication/AccountAuthenticatorService.java" />
+      <change type="MOVED" beforePath="C:\Users\Uli\Documents\Projekte\android\src\com\owncloud\android\authentication\AccountUtils.java" afterPath="$PROJECT_DIR$/src/de/blaucloud/android/authentication/AccountUtils.java" />
+      <change type="MOVED" beforePath="C:\Users\Uli\Documents\Projekte\android\src\com\owncloud\android\authentication\AuthenticatorActivity.java" afterPath="$PROJECT_DIR$/src/de/blaucloud/android/authentication/AuthenticatorActivity.java" />
+      <change type="MOVED" beforePath="C:\Users\Uli\Documents\Projekte\android\src\com\owncloud\android\authentication\OAuth2Constants.java" afterPath="$PROJECT_DIR$/src/de/blaucloud/android/authentication/OAuth2Constants.java" />
+      <change type="MOVED" beforePath="C:\Users\Uli\Documents\Projekte\android\src\com\owncloud\android\authentication\SsoWebViewClient.java" afterPath="$PROJECT_DIR$/src/de/blaucloud/android/authentication/SsoWebViewClient.java" />
+      <change type="MOVED" beforePath="C:\Users\Uli\Documents\Projekte\android\src\com\owncloud\android\datamodel\FileDataStorageManager.java" afterPath="$PROJECT_DIR$/src/de/blaucloud/android/datamodel/FileDataStorageManager.java" />
+      <change type="MOVED" beforePath="C:\Users\Uli\Documents\Projekte\android\src\com\owncloud\android\datamodel\OCFile.java" afterPath="$PROJECT_DIR$/src/de/blaucloud/android/datamodel/OCFile.java" />
+      <change type="MOVED" beforePath="C:\Users\Uli\Documents\Projekte\android\src\com\owncloud\android\db\DbHandler.java" afterPath="$PROJECT_DIR$/src/de/blaucloud/android/db/DbHandler.java" />
+      <change type="MOVED" beforePath="C:\Users\Uli\Documents\Projekte\android\src\com\owncloud\android\db\ProviderMeta.java" afterPath="$PROJECT_DIR$/src/de/blaucloud/android/db/ProviderMeta.java" />
+      <change type="MOVED" beforePath="C:\Users\Uli\Documents\Projekte\android\src\com\owncloud\android\files\BootupBroadcastReceiver.java" afterPath="$PROJECT_DIR$/src/de/blaucloud/android/files/BootupBroadcastReceiver.java" />
+      <change type="MOVED" beforePath="C:\Users\Uli\Documents\Projekte\android\src\com\owncloud\android\files\FileMenuFilter.java" afterPath="$PROJECT_DIR$/src/de/blaucloud/android/files/FileMenuFilter.java" />
+      <change type="MOVED" beforePath="C:\Users\Uli\Documents\Projekte\android\src\com\owncloud\android\files\FileOperationsHelper.java" afterPath="$PROJECT_DIR$/src/de/blaucloud/android/files/FileOperationsHelper.java" />
+      <change type="MOVED" beforePath="C:\Users\Uli\Documents\Projekte\android\src\com\owncloud\android\files\InstantUploadBroadcastReceiver.java" afterPath="$PROJECT_DIR$/src/de/blaucloud/android/files/InstantUploadBroadcastReceiver.java" />
+      <change type="MOVED" beforePath="C:\Users\Uli\Documents\Projekte\android\src\com\owncloud\android\files\services\FileDownloader.java" afterPath="$PROJECT_DIR$/src/de/blaucloud/android/files/services/FileDownloader.java" />
+      <change type="MOVED" beforePath="C:\Users\Uli\Documents\Projekte\android\src\com\owncloud\android\files\services\FileUploader.java" afterPath="$PROJECT_DIR$/src/de/blaucloud/android/files/services/FileUploader.java" />
+      <change type="MOVED" beforePath="C:\Users\Uli\Documents\Projekte\android\src\com\owncloud\android\files\services\OnUploadCompletedListener.java" afterPath="$PROJECT_DIR$/src/de/blaucloud/android/files/services/OnUploadCompletedListener.java" />
+      <change type="MOVED" beforePath="C:\Users\Uli\Documents\Projekte\android\src\com\owncloud\android\media\MediaControlView.java" afterPath="$PROJECT_DIR$/src/de/blaucloud/android/media/MediaControlView.java" />
+      <change type="MOVED" beforePath="C:\Users\Uli\Documents\Projekte\android\src\com\owncloud\android\media\MediaService.java" afterPath="$PROJECT_DIR$/src/de/blaucloud/android/media/MediaService.java" />
+      <change type="MOVED" beforePath="C:\Users\Uli\Documents\Projekte\android\src\com\owncloud\android\media\MediaServiceBinder.java" afterPath="$PROJECT_DIR$/src/de/blaucloud/android/media/MediaServiceBinder.java" />
+      <change type="MOVED" beforePath="C:\Users\Uli\Documents\Projekte\android\src\com\owncloud\android\notifications\NotificationBuilderWithProgressBar.java" afterPath="$PROJECT_DIR$/src/de/blaucloud/android/notifications/NotificationBuilderWithProgressBar.java" />
+      <change type="MOVED" beforePath="C:\Users\Uli\Documents\Projekte\android\src\com\owncloud\android\notifications\NotificationDelayer.java" afterPath="$PROJECT_DIR$/src/de/blaucloud/android/notifications/NotificationDelayer.java" />
+      <change type="MOVED" beforePath="C:\Users\Uli\Documents\Projekte\android\src\com\owncloud\android\operations\CreateFolderOperation.java" afterPath="$PROJECT_DIR$/src/de/blaucloud/android/operations/CreateFolderOperation.java" />
+      <change type="MOVED" beforePath="C:\Users\Uli\Documents\Projekte\android\src\com\owncloud\android\operations\CreateShareOperation.java" afterPath="$PROJECT_DIR$/src/de/blaucloud/android/operations/CreateShareOperation.java" />
+      <change type="MOVED" beforePath="C:\Users\Uli\Documents\Projekte\android\src\com\owncloud\android\operations\DetectAuthenticationMethodOperation.java" afterPath="$PROJECT_DIR$/src/de/blaucloud/android/operations/DetectAuthenticationMethodOperation.java" />
+      <change type="MOVED" beforePath="C:\Users\Uli\Documents\Projekte\android\src\com\owncloud\android\operations\DownloadFileOperation.java" afterPath="$PROJECT_DIR$/src/de/blaucloud/android/operations/DownloadFileOperation.java" />
+      <change type="MOVED" beforePath="C:\Users\Uli\Documents\Projekte\android\src\com\owncloud\android\operations\GetServerInfoOperation.java" afterPath="$PROJECT_DIR$/src/de/blaucloud/android/operations/GetServerInfoOperation.java" />
+      <change type="MOVED" beforePath="C:\Users\Uli\Documents\Projekte\android\src\com\owncloud\android\operations\GetSharesForFileOperation.java" afterPath="$PROJECT_DIR$/src/de/blaucloud/android/operations/GetSharesForFileOperation.java" />
+      <change type="MOVED" beforePath="C:\Users\Uli\Documents\Projekte\android\src\com\owncloud\android\operations\GetSharesOperation.java" afterPath="$PROJECT_DIR$/src/de/blaucloud/android/operations/GetSharesOperation.java" />
+      <change type="MOVED" beforePath="C:\Users\Uli\Documents\Projekte\android\src\com\owncloud\android\operations\OAuth2GetAccessToken.java" afterPath="$PROJECT_DIR$/src/de/blaucloud/android/operations/OAuth2GetAccessToken.java" />
+      <change type="MOVED" beforePath="C:\Users\Uli\Documents\Projekte\android\src\com\owncloud\android\operations\RemoveFileOperation.java" afterPath="$PROJECT_DIR$/src/de/blaucloud/android/operations/RemoveFileOperation.java" />
+      <change type="MOVED" beforePath="C:\Users\Uli\Documents\Projekte\android\src\com\owncloud\android\operations\RenameFileOperation.java" afterPath="$PROJECT_DIR$/src/de/blaucloud/android/operations/RenameFileOperation.java" />
+      <change type="MOVED" beforePath="C:\Users\Uli\Documents\Projekte\android\src\com\owncloud\android\operations\SynchronizeFileOperation.java" afterPath="$PROJECT_DIR$/src/de/blaucloud/android/operations/SynchronizeFileOperation.java" />
+      <change type="MOVED" beforePath="C:\Users\Uli\Documents\Projekte\android\src\com\owncloud\android\operations\SynchronizeFolderOperation.java" afterPath="$PROJECT_DIR$/src/de/blaucloud/android/operations/SynchronizeFolderOperation.java" />
+      <change type="MOVED" beforePath="C:\Users\Uli\Documents\Projekte\android\src\com\owncloud\android\operations\UnshareLinkOperation.java" afterPath="$PROJECT_DIR$/src/de/blaucloud/android/operations/UnshareLinkOperation.java" />
+      <change type="MOVED" beforePath="C:\Users\Uli\Documents\Projekte\android\src\com\owncloud\android\operations\UpdateOCVersionOperation.java" afterPath="$PROJECT_DIR$/src/de/blaucloud/android/operations/UpdateOCVersionOperation.java" />
+      <change type="MOVED" beforePath="C:\Users\Uli\Documents\Projekte\android\src\com\owncloud\android\operations\UploadFileOperation.java" afterPath="$PROJECT_DIR$/src/de/blaucloud/android/operations/UploadFileOperation.java" />
+      <change type="MOVED" beforePath="C:\Users\Uli\Documents\Projekte\android\src\com\owncloud\android\operations\common\SyncOperation.java" afterPath="$PROJECT_DIR$/src/de/blaucloud/android/operations/common/SyncOperation.java" />
+      <change type="MOVED" beforePath="C:\Users\Uli\Documents\Projekte\android\src\com\owncloud\android\providers\FileContentProvider.java" afterPath="$PROJECT_DIR$/src/de/blaucloud/android/providers/FileContentProvider.java" />
+      <change type="MOVED" beforePath="C:\Users\Uli\Documents\Projekte\android\src\com\owncloud\android\services\OperationsService.java" afterPath="$PROJECT_DIR$/src/de/blaucloud/android/services/OperationsService.java" />
+      <change type="MOVED" beforePath="C:\Users\Uli\Documents\Projekte\android\src\com\owncloud\android\services\observer\FileObserverService.java" afterPath="$PROJECT_DIR$/src/de/blaucloud/android/services/observer/FileObserverService.java" />
+      <change type="MOVED" beforePath="C:\Users\Uli\Documents\Projekte\android\src\com\owncloud\android\services\observer\FolderObserver.java" afterPath="$PROJECT_DIR$/src/de/blaucloud/android/services/observer/FolderObserver.java" />
+      <change type="MOVED" beforePath="C:\Users\Uli\Documents\Projekte\android\src\com\owncloud\android\syncadapter\AbstractOwnCloudSyncAdapter.java" afterPath="$PROJECT_DIR$/src/de/blaucloud/android/syncadapter/AbstractOwnCloudSyncAdapter.java" />
+      <change type="MOVED" beforePath="C:\Users\Uli\Documents\Projekte\android\src\com\owncloud\android\syncadapter\ContactSyncAdapter.java" afterPath="$PROJECT_DIR$/src/de/blaucloud/android/syncadapter/ContactSyncAdapter.java" />
+      <change type="MOVED" beforePath="C:\Users\Uli\Documents\Projekte\android\src\com\owncloud\android\syncadapter\ContactSyncService.java" afterPath="$PROJECT_DIR$/src/de/blaucloud/android/syncadapter/ContactSyncService.java" />
+      <change type="MOVED" beforePath="C:\Users\Uli\Documents\Projekte\android\src\com\owncloud\android\syncadapter\FileSyncAdapter.java" afterPath="$PROJECT_DIR$/src/de/blaucloud/android/syncadapter/FileSyncAdapter.java" />
+      <change type="MOVED" beforePath="C:\Users\Uli\Documents\Projekte\android\src\com\owncloud\android\syncadapter\FileSyncService.java" afterPath="$PROJECT_DIR$/src/de/blaucloud/android/syncadapter/FileSyncService.java" />
+      <change type="MOVED" beforePath="C:\Users\Uli\Documents\Projekte\android\src\com\owncloud\android\ui\ActionItem.java" afterPath="$PROJECT_DIR$/src/de/blaucloud/android/ui/ActionItem.java" />
+      <change type="MOVED" beforePath="C:\Users\Uli\Documents\Projekte\android\src\com\owncloud\android\ui\CheckBoxPreferenceWithLongTitle.java" afterPath="$PROJECT_DIR$/src/de/blaucloud/android/ui/CheckBoxPreferenceWithLongTitle.java" />
+      <change type="MOVED" beforePath="C:\Users\Uli\Documents\Projekte\android\src\com\owncloud\android\ui\CustomPopup.java" afterPath="$PROJECT_DIR$/src/de/blaucloud/android/ui/CustomPopup.java" />
+      <change type="MOVED" beforePath="C:\Users\Uli\Documents\Projekte\android\src\com\owncloud\android\ui\ExtendedListView.java" afterPath="$PROJECT_DIR$/src/de/blaucloud/android/ui/ExtendedListView.java" />
+      <change type="MOVED" beforePath="C:\Users\Uli\Documents\Projekte\android\src\com\owncloud\android\ui\PreferenceMultiline.java" afterPath="$PROJECT_DIR$/src/de/blaucloud/android/ui/PreferenceMultiline.java" />
+      <change type="MOVED" beforePath="C:\Users\Uli\Documents\Projekte\android\src\com\owncloud\android\ui\QuickAction.java" afterPath="$PROJECT_DIR$/src/de/blaucloud/android/ui/QuickAction.java" />
+      <change type="MOVED" beforePath="C:\Users\Uli\Documents\Projekte\android\src\com\owncloud\android\ui\activity\AccountSelectActivity.java" afterPath="$PROJECT_DIR$/src/de/blaucloud/android/ui/activity/AccountSelectActivity.java" />
+      <change type="MOVED" beforePath="C:\Users\Uli\Documents\Projekte\android\src\com\owncloud\android\ui\activity\ComponentsGetter.java" afterPath="$PROJECT_DIR$/src/de/blaucloud/android/ui/activity/ComponentsGetter.java" />
+      <change type="MOVED" beforePath="C:\Users\Uli\Documents\Projekte\android\src\com\owncloud\android\ui\activity\ConflictsResolveActivity.java" afterPath="$PROJECT_DIR$/src/de/blaucloud/android/ui/activity/ConflictsResolveActivity.java" />
+      <change type="MOVED" beforePath="C:\Users\Uli\Documents\Projekte\android\src\com\owncloud\android\ui\activity\CopyToClipboardActivity.java" afterPath="$PROJECT_DIR$/src/de/blaucloud/android/ui/activity/CopyToClipboardActivity.java" />
+      <change type="MOVED" beforePath="C:\Users\Uli\Documents\Projekte\android\src\com\owncloud\android\ui\activity\ErrorsWhileCopyingHandlerActivity.java" afterPath="$PROJECT_DIR$/src/de/blaucloud/android/ui/activity/ErrorsWhileCopyingHandlerActivity.java" />
+      <change type="MOVED" beforePath="C:\Users\Uli\Documents\Projekte\android\src\com\owncloud\android\ui\activity\FileActivity.java" afterPath="$PROJECT_DIR$/src/de/blaucloud/android/ui/activity/FileActivity.java" />
+      <change type="MOVED" beforePath="C:\Users\Uli\Documents\Projekte\android\src\com\owncloud\android\ui\activity\FileDisplayActivity.java" afterPath="$PROJECT_DIR$/src/de/blaucloud/android/ui/activity/FileDisplayActivity.java" />
+      <change type="MOVED" beforePath="C:\Users\Uli\Documents\Projekte\android\src\com\owncloud\android\ui\activity\GenericExplanationActivity.java" afterPath="$PROJECT_DIR$/src/de/blaucloud/android/ui/activity/GenericExplanationActivity.java" />
+      <change type="MOVED" beforePath="C:\Users\Uli\Documents\Projekte\android\src\com\owncloud\android\ui\activity\HookActivity.java" afterPath="$PROJECT_DIR$/src/de/blaucloud/android/ui/activity/HookActivity.java" />
+      <change type="MOVED" beforePath="C:\Users\Uli\Documents\Projekte\android\src\com\owncloud\android\ui\activity\LogHistoryActivity.java" afterPath="$PROJECT_DIR$/src/de/blaucloud/android/ui/activity/LogHistoryActivity.java" />
+      <change type="MOVED" beforePath="C:\Users\Uli\Documents\Projekte\android\src\com\owncloud\android\ui\activity\PinCodeActivity.java" afterPath="$PROJECT_DIR$/src/de/blaucloud/android/ui/activity/PinCodeActivity.java" />
+      <change type="MOVED" beforePath="C:\Users\Uli\Documents\Projekte\android\src\com\owncloud\android\ui\activity\Preferences.java" afterPath="$PROJECT_DIR$/src/de/blaucloud/android/ui/activity/Preferences.java" />
+      <change type="MOVED" beforePath="C:\Users\Uli\Documents\Projekte\android\src\com\owncloud\android\ui\activity\UploadFilesActivity.java" afterPath="$PROJECT_DIR$/src/de/blaucloud/android/ui/activity/UploadFilesActivity.java" />
+      <change type="MOVED" beforePath="C:\Users\Uli\Documents\Projekte\android\src\com\owncloud\android\ui\activity\Uploader.java" afterPath="$PROJECT_DIR$/src/de/blaucloud/android/ui/activity/Uploader.java" />
+      <change type="MOVED" beforePath="C:\Users\Uli\Documents\Projekte\android\src\com\owncloud\android\ui\adapter\CertificateCombinedExceptionViewAdapter.java" afterPath="$PROJECT_DIR$/src/de/blaucloud/android/ui/adapter/CertificateCombinedExceptionViewAdapter.java" />
+      <change type="MOVED" beforePath="C:\Users\Uli\Documents\Projekte\android\src\com\owncloud\android\ui\adapter\FileListListAdapter.java" afterPath="$PROJECT_DIR$/src/de/blaucloud/android/ui/adapter/FileListListAdapter.java" />
+      <change type="MOVED" beforePath="C:\Users\Uli\Documents\Projekte\android\src\com\owncloud\android\ui\adapter\LocalFileListAdapter.java" afterPath="$PROJECT_DIR$/src/de/blaucloud/android/ui/adapter/LocalFileListAdapter.java" />
+      <change type="MOVED" beforePath="C:\Users\Uli\Documents\Projekte\android\src\com\owncloud\android\ui\adapter\LogListAdapter.java" afterPath="$PROJECT_DIR$/src/de/blaucloud/android/ui/adapter/LogListAdapter.java" />
+      <change type="MOVED" beforePath="C:\Users\Uli\Documents\Projekte\android\src\com\owncloud\android\ui\adapter\SslCertificateViewAdapter.java" afterPath="$PROJECT_DIR$/src/de/blaucloud/android/ui/adapter/SslCertificateViewAdapter.java" />
+      <change type="MOVED" beforePath="C:\Users\Uli\Documents\Projekte\android\src\com\owncloud\android\ui\adapter\SslErrorViewAdapter.java" afterPath="$PROJECT_DIR$/src/de/blaucloud/android/ui/adapter/SslErrorViewAdapter.java" />
+      <change type="MOVED" beforePath="C:\Users\Uli\Documents\Projekte\android\src\com\owncloud\android\ui\adapter\X509CertificateViewAdapter.java" afterPath="$PROJECT_DIR$/src/de/blaucloud/android/ui/adapter/X509CertificateViewAdapter.java" />
+      <change type="MOVED" beforePath="C:\Users\Uli\Documents\Projekte\android\src\com\owncloud\android\ui\dialog\ChangelogDialog.java" afterPath="$PROJECT_DIR$/src/de/blaucloud/android/ui/dialog/ChangelogDialog.java" />
+      <change type="MOVED" beforePath="C:\Users\Uli\Documents\Projekte\android\src\com\owncloud\android\ui\dialog\ConfirmationDialogFragment.java" afterPath="$PROJECT_DIR$/src/de/blaucloud/android/ui/dialog/ConfirmationDialogFragment.java" />
+      <change type="MOVED" beforePath="C:\Users\Uli\Documents\Projekte\android\src\com\owncloud\android\ui\dialog\ConflictsResolveDialog.java" afterPath="$PROJECT_DIR$/src/de/blaucloud/android/ui/dialog/ConflictsResolveDialog.java" />
+      <change type="MOVED" beforePath="C:\Users\Uli\Documents\Projekte\android\src\com\owncloud\android\ui\dialog\CreateFolderDialogFragment.java" afterPath="$PROJECT_DIR$/src/de/blaucloud/android/ui/dialog/CreateFolderDialogFragment.java" />
+      <change type="MOVED" beforePath="C:\Users\Uli\Documents\Projekte\android\src\com\owncloud\android\ui\dialog\IndeterminateProgressDialog.java" afterPath="$PROJECT_DIR$/src/de/blaucloud/android/ui/dialog/IndeterminateProgressDialog.java" />
+      <change type="MOVED" beforePath="C:\Users\Uli\Documents\Projekte\android\src\com\owncloud\android\ui\dialog\LoadingDialog.java" afterPath="$PROJECT_DIR$/src/de/blaucloud/android/ui/dialog/LoadingDialog.java" />
+      <change type="MOVED" beforePath="C:\Users\Uli\Documents\Projekte\android\src\com\owncloud\android\ui\dialog\RemoveFileDialogFragment.java" afterPath="$PROJECT_DIR$/src/de/blaucloud/android/ui/dialog/RemoveFileDialogFragment.java" />
+      <change type="MOVED" beforePath="C:\Users\Uli\Documents\Projekte\android\src\com\owncloud\android\ui\dialog\RenameFileDialogFragment.java" afterPath="$PROJECT_DIR$/src/de/blaucloud/android/ui/dialog/RenameFileDialogFragment.java" />
+      <change type="MOVED" beforePath="C:\Users\Uli\Documents\Projekte\android\src\com\owncloud\android\ui\dialog\SamlWebViewDialog.java" afterPath="$PROJECT_DIR$/src/de/blaucloud/android/ui/dialog/SamlWebViewDialog.java" />
+      <change type="MOVED" beforePath="C:\Users\Uli\Documents\Projekte\android\src\com\owncloud\android\ui\dialog\ShareLinkToDialog.java" afterPath="$PROJECT_DIR$/src/de/blaucloud/android/ui/dialog/ShareLinkToDialog.java" />
+      <change type="MOVED" beforePath="C:\Users\Uli\Documents\Projekte\android\src\com\owncloud\android\ui\dialog\SslUntrustedCertDialog.java" afterPath="$PROJECT_DIR$/src/de/blaucloud/android/ui/dialog/SslUntrustedCertDialog.java" />
+      <change type="MOVED" beforePath="C:\Users\Uli\Documents\Projekte\android\src\com\owncloud\android\ui\dialog\SslValidatorDialog.java" afterPath="$PROJECT_DIR$/src/de/blaucloud/android/ui/dialog/SslValidatorDialog.java" />
+      <change type="MOVED" beforePath="C:\Users\Uli\Documents\Projekte\android\src\com\owncloud\android\ui\dialog\SsoWebView.java" afterPath="$PROJECT_DIR$/src/de/blaucloud/android/ui/dialog/SsoWebView.java" />
+      <change type="MOVED" beforePath="C:\Users\Uli\Documents\Projekte\android\src\com\owncloud\android\ui\fragment\AuthenticatorAccountDetailsFragment.java" afterPath="$PROJECT_DIR$/src/de/blaucloud/android/ui/fragment/AuthenticatorAccountDetailsFragment.java" />
+      <change type="MOVED" beforePath="C:\Users\Uli\Documents\Projekte\android\src\com\owncloud\android\ui\fragment\AuthenticatorGetStartedFragment.java" afterPath="$PROJECT_DIR$/src/de/blaucloud/android/ui/fragment/AuthenticatorGetStartedFragment.java" />
+      <change type="MOVED" beforePath="C:\Users\Uli\Documents\Projekte\android\src\com\owncloud\android\ui\fragment\ExtendedListFragment.java" afterPath="$PROJECT_DIR$/src/de/blaucloud/android/ui/fragment/ExtendedListFragment.java" />
+      <change type="MOVED" beforePath="C:\Users\Uli\Documents\Projekte\android\src\com\owncloud\android\ui\fragment\FileDetailFragment.java" afterPath="$PROJECT_DIR$/src/de/blaucloud/android/ui/fragment/FileDetailFragment.java" />
+      <change type="MOVED" beforePath="C:\Users\Uli\Documents\Projekte\android\src\com\owncloud\android\ui\fragment\FileFragment.java" afterPath="$PROJECT_DIR$/src/de/blaucloud/android/ui/fragment/FileFragment.java" />
+      <change type="MOVED" beforePath="C:\Users\Uli\Documents\Projekte\android\src\com\owncloud\android\ui\fragment\LocalFileListFragment.java" afterPath="$PROJECT_DIR$/src/de/blaucloud/android/ui/fragment/LocalFileListFragment.java" />
+      <change type="MOVED" beforePath="C:\Users\Uli\Documents\Projekte\android\src\com\owncloud\android\ui\fragment\OCFileListFragment.java" afterPath="$PROJECT_DIR$/src/de/blaucloud/android/ui/fragment/OCFileListFragment.java" />
+      <change type="MOVED" beforePath="C:\Users\Uli\Documents\Projekte\android\src\com\owncloud\android\ui\preview\FileDownloadFragment.java" afterPath="$PROJECT_DIR$/src/de/blaucloud/android/ui/preview/FileDownloadFragment.java" />
+      <change type="MOVED" beforePath="C:\Users\Uli\Documents\Projekte\android\src\com\owncloud\android\ui\preview\PreviewImageActivity.java" afterPath="$PROJECT_DIR$/src/de/blaucloud/android/ui/preview/PreviewImageActivity.java" />
+      <change type="MOVED" beforePath="C:\Users\Uli\Documents\Projekte\android\src\com\owncloud\android\ui\preview\PreviewImageFragment.java" afterPath="$PROJECT_DIR$/src/de/blaucloud/android/ui/preview/PreviewImageFragment.java" />
+      <change type="MOVED" beforePath="C:\Users\Uli\Documents\Projekte\android\src\com\owncloud\android\ui\preview\PreviewImagePagerAdapter.java" afterPath="$PROJECT_DIR$/src/de/blaucloud/android/ui/preview/PreviewImagePagerAdapter.java" />
+      <change type="MOVED" beforePath="C:\Users\Uli\Documents\Projekte\android\src\com\owncloud\android\ui\preview\PreviewMediaFragment.java" afterPath="$PROJECT_DIR$/src/de/blaucloud/android/ui/preview/PreviewMediaFragment.java" />
+      <change type="MOVED" beforePath="C:\Users\Uli\Documents\Projekte\android\src\com\owncloud\android\ui\preview\PreviewVideoActivity.java" afterPath="$PROJECT_DIR$/src/de/blaucloud/android/ui/preview/PreviewVideoActivity.java" />
+      <change type="MOVED" beforePath="C:\Users\Uli\Documents\Projekte\android\src\com\owncloud\android\utils\DisplayUtils.java" afterPath="$PROJECT_DIR$/src/de/blaucloud/android/utils/DisplayUtils.java" />
+      <change type="MOVED" beforePath="C:\Users\Uli\Documents\Projekte\android\src\com\owncloud\android\utils\ErrorMessageAdapter.java" afterPath="$PROJECT_DIR$/src/de/blaucloud/android/utils/ErrorMessageAdapter.java" />
+      <change type="MOVED" beforePath="C:\Users\Uli\Documents\Projekte\android\src\com\owncloud\android\utils\FileStorageUtils.java" afterPath="$PROJECT_DIR$/src/de/blaucloud/android/utils/FileStorageUtils.java" />
+      <change type="MOVED" beforePath="C:\Users\Uli\Documents\Projekte\android\src\com\owncloud\android\utils\Log_OC.java" afterPath="$PROJECT_DIR$/src/de/blaucloud/android/utils/Log_OC.java" />
+      <change type="MOVED" beforePath="C:\Users\Uli\Documents\Projekte\android\src\com\owncloud\android\utils\OwnCloudSession.java" afterPath="$PROJECT_DIR$/src/de/blaucloud/android/utils/OwnCloudSession.java" />
+      <change type="MOVED" beforePath="C:\Users\Uli\Documents\Projekte\android\src\com\owncloud\android\utils\RecursiveFileObserver.java" afterPath="$PROJECT_DIR$/src/de/blaucloud/android/utils/RecursiveFileObserver.java" />
+      <change type="MOVED" beforePath="C:\Users\Uli\Documents\Projekte\android\src\com\owncloud\android\widgets\ActionEditText.java" afterPath="$PROJECT_DIR$/src/de/blaucloud/android/widgets/ActionEditText.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/actionbarsherlock" afterPath="$PROJECT_DIR$/actionbarsherlock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/actionbarsherlock/library/libs/android-support-v4.jar" afterPath="$PROJECT_DIR$/actionbarsherlock/library/libs/android-support-v4.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-hdpi/icon.png" afterPath="$PROJECT_DIR$/res/drawable-hdpi/icon.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-ldpi/icon.png" afterPath="$PROJECT_DIR$/res/drawable-ldpi/icon.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-mdpi/icon.png" afterPath="$PROJECT_DIR$/res/drawable-mdpi/icon.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-xhdpi/icon.png" afterPath="$PROJECT_DIR$/res/drawable-xhdpi/icon.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-hdpi/logo.png" afterPath="$PROJECT_DIR$/res/drawable-hdpi/logo.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-ldpi/logo.png" afterPath="$PROJECT_DIR$/res/drawable-ldpi/logo.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-mdpi/logo.png" afterPath="$PROJECT_DIR$/res/drawable-mdpi/logo.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-hdpi/notification_icon.png" afterPath="$PROJECT_DIR$/res/drawable-hdpi/notification_icon.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-mdpi/notification_icon.png" afterPath="$PROJECT_DIR$/res/drawable-mdpi/notification_icon.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-xhdpi/notification_icon.png" afterPath="$PROJECT_DIR$/res/drawable-xhdpi/notification_icon.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/owncloud-android-library" afterPath="$PROJECT_DIR$/owncloud-android-library" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/.classpath" afterPath="$PROJECT_DIR$/tests/.classpath" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.project" afterPath="$PROJECT_DIR$/.project" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/.project" afterPath="$PROJECT_DIR$/tests/.project" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/owncloud-android-library/src/com/owncloud/android/lib/common/accounts/AccountUtils.java" afterPath="$PROJECT_DIR$/owncloud-android-library/src/com/owncloud/android/lib/common/accounts/AccountUtils.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AndroidManifest.xml" afterPath="$PROJECT_DIR$/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/oc_jb_workaround/AndroidManifest.xml" afterPath="$PROJECT_DIR$/oc_jb_workaround/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/AndroidManifest.xml" afterPath="$PROJECT_DIR$/tests/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/owncloud-android-library/src/com/owncloud/android/lib/resources/shares/CreateRemoteShareOperation.java" afterPath="$PROJECT_DIR$/owncloud-android-library/src/com/owncloud/android/lib/resources/shares/CreateRemoteShareOperation.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/owncloud-android-library/src/com/owncloud/android/lib/resources/shares/GetRemoteSharesForFileOperation.java" afterPath="$PROJECT_DIR$/owncloud-android-library/src/com/owncloud/android/lib/resources/shares/GetRemoteSharesForFileOperation.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/owncloud-android-library/test_client/src/com/owncloud/android/lib/test_project/TestActivity.java" afterPath="$PROJECT_DIR$/owncloud-android-library/test_client/src/com/owncloud/android/lib/test_project/TestActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/account_setup.xml" afterPath="$PROJECT_DIR$/res/layout/account_setup.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout-land/account_setup.xml" afterPath="$PROJECT_DIR$/res/layout-land/account_setup.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/ant.properties" afterPath="$PROJECT_DIR$/tests/ant.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/raw/changelog.html" afterPath="$PROJECT_DIR$/res/raw/changelog.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/raw-de/changelog.html" afterPath="$PROJECT_DIR$/res/raw-de/changelog.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/raw-es/changelog.html" afterPath="$PROJECT_DIR$/res/raw-es/changelog.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/colors.xml" afterPath="$PROJECT_DIR$/res/values/colors.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/file_details_fragment.xml" afterPath="$PROJECT_DIR$/res/layout/file_details_fragment.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/file_preview.xml" afterPath="$PROJECT_DIR$/res/layout/file_preview.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/list_fragment.xml" afterPath="$PROJECT_DIR$/res/layout/list_fragment.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/list_item.xml" afterPath="$PROJECT_DIR$/res/layout/list_item.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/pincodelock.xml" afterPath="$PROJECT_DIR$/res/layout/pincodelock.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/xml/preferences.xml" afterPath="$PROJECT_DIR$/res/xml/preferences.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project.properties" afterPath="$PROJECT_DIR$/project.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/actionbarsherlock/library/project.properties" afterPath="$PROJECT_DIR$/actionbarsherlock/library/project.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/owncloud-android-library/project.properties" afterPath="$PROJECT_DIR$/owncloud-android-library/project.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/project.properties" afterPath="$PROJECT_DIR$/tests/project.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/oc_jb_workaround/res/values/setup.xml" afterPath="$PROJECT_DIR$/oc_jb_workaround/res/values/setup.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/setup.xml" afterPath="$PROJECT_DIR$/res/values/setup.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/sso_dialog.xml" afterPath="$PROJECT_DIR$/res/layout/sso_dialog.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/strings.xml" afterPath="$PROJECT_DIR$/res/values/strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values-de/strings.xml" afterPath="$PROJECT_DIR$/res/values-de/strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values-de-rCH/strings.xml" afterPath="$PROJECT_DIR$/res/values-de-rCH/strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values-de-rDE/strings.xml" afterPath="$PROJECT_DIR$/res/values-de-rDE/strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values-en-rGB/strings.xml" afterPath="$PROJECT_DIR$/res/values-en-rGB/strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/res/values/strings.xml" afterPath="$PROJECT_DIR$/tests/res/values/strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/styles.xml" afterPath="$PROJECT_DIR$/res/values/styles.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/upload_files_layout.xml" afterPath="$PROJECT_DIR$/res/layout/upload_files_layout.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/versioned_styles.xml" afterPath="$PROJECT_DIR$/res/values/versioned_styles.xml" />
+    </list>
+    <ignored path="owncloud.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="owncloud" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="AndroidManifest.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="2878" max-vertical-offset="3468">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".travis.yml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.travis.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="391">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ActionItem.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/de/blaucloud/android/ui/ActionItem.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="2" max-vertical-offset="646">
+              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="build.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/build.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="923" max-vertical-offset="1513">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="preferences.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/xml/preferences.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-14.571428" vertical-offset="272" max-vertical-offset="1224">
+              <caret line="40" column="17" selection-start-line="40" selection-start-column="17" selection-end-line="40" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="file_preview.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/layout/file_preview.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="583" max-vertical-offset="1173">
+              <caret line="56" column="17" selection-start-line="56" selection-start-column="17" selection-end-line="56" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="list_fragment.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/layout/list_fragment.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="314" max-vertical-offset="918">
+              <caret line="30" column="21" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="notification_with_progress_bar.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/layout/notification_with_progress_bar.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="719" max-vertical-offset="1309">
+              <caret line="43" column="32" selection-start-line="43" selection-start-column="32" selection-end-line="43" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pincodelock.xml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/res/layout/pincodelock.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.82711864" vertical-offset="838" max-vertical-offset="1428">
+              <caret line="78" column="0" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CONTRIBUTING.md" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CONTRIBUTING.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="8.0" vertical-offset="200" max-vertical-offset="765">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="true" />
+    </FindUsagesManager>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/actionbarsherlock/samples/styled/res/values/colors.xml" />
+        <option value="$PROJECT_DIR$/res/values/styles.xml" />
+        <option value="$PROJECT_DIR$/res/values-de-rCH/strings.xml" />
+        <option value="$PROJECT_DIR$/res/values/colors.xml" />
+        <option value="$PROJECT_DIR$/res/values/strings.xml" />
+        <option value="$PROJECT_DIR$/res/layout-land/account_setup.xml" />
+        <option value="$PROJECT_DIR$/res/layout/account_setup.xml" />
+        <option value="$PROJECT_DIR$/res/values-en-rGB/strings.xml" />
+        <option value="$PROJECT_DIR$/res/values-de/strings.xml" />
+        <option value="$PROJECT_DIR$/res/values-de-rDE/strings.xml" />
+        <option value="$PROJECT_DIR$/res/layout/list_item.xml" />
+        <option value="$PROJECT_DIR$/res/values/versioned_styles.xml" />
+        <option value="$PROJECT_DIR$/res/layout/files.xml" />
+        <option value="$PROJECT_DIR$/res/layout/file_details_fragment.xml" />
+        <option value="$PROJECT_DIR$/res/values/setup.xml" />
+        <option value="$PROJECT_DIR$/project.properties" />
+        <option value="$PROJECT_DIR$/src/de/blaucloud/android/ui/ActionItem.java" />
+        <option value="$PROJECT_DIR$/src/de/blaucloud/android/MainApp.java" />
+        <option value="$PROJECT_DIR$/src/de/blaucloud/android/authentication/AccountAuthenticator.java" />
+        <option value="$PROJECT_DIR$/owncloud-android-library/sample_client/src/com/owncloud/android/lib/sampleclient/FilesArrayAdapter.java" />
+        <option value="$PROJECT_DIR$/owncloud-android-library/sample_client/src/com/owncloud/android/lib/sampleclient/MainActivity.java" />
+        <option value="$PROJECT_DIR$/.project" />
+        <option value="$PROJECT_DIR$/tests/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/tests/src/de/blaucloud/android/test/AccountUtilsTest.java" />
+        <option value="$PROJECT_DIR$/tests/.project" />
+        <option value="$PROJECT_DIR$/tests/res/values/strings.xml" />
+        <option value="$PROJECT_DIR$/tests/.classpath" />
+        <option value="$PROJECT_DIR$/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/oc_jb_workaround/src/com/owncloud/android/workaround/accounts/AccountAuthenticatorService.java" />
+        <option value="$PROJECT_DIR$/oc_jb_workaround/res/values/setup.xml" />
+        <option value="$PROJECT_DIR$/oc_jb_workaround/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/res/xml/preferences.xml" />
+        <option value="$PROJECT_DIR$/res/layout/file_preview.xml" />
+        <option value="$PROJECT_DIR$/res/layout/list_fragment.xml" />
+        <option value="$PROJECT_DIR$/res/layout/pincodelock.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="Scope" currentSubView="Project Files" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="owncloud" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="owncloud" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="android">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="android">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="src">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="de/blaucloud/android">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="android">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="src">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="de/blaucloud/android">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="ui">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="android">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="res">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="owncloud" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="owncloud" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="android" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="owncloud" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="android" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="android" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="owncloud" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="android" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="android" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ui" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="owncloud" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="android" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="owncloud" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="android" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="menu" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="owncloud" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="android" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layout" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="GoToClass.includeLibraries" value="false" />
+    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="GoToFile.includeJavaFiles" value="false" />
+    <property name="MemberChooser.sorted" value="false" />
+    <property name="MemberChooser.showClasses" value="true" />
+    <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="recentsLimit" value="5" />
+    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
+    <property name="FullScreen" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="de.blaucloud" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
+      <module name="" />
+      <option name="TESTING_TYPE" value="0" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="USE_COMMAND_LINE" value="true" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
+      <module name="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="DEPLOY" value="true" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="USE_COMMAND_LINE" value="true" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
+      <method />
+    </configuration>
+    <list size="0" />
+    <configuration name="&lt;template&gt;" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" default="true" selected="false">
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+    </configuration>
+    <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
+      <Host>localhost</Host>
+      <Port>5050</Port>
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4cad14e5-d665-485b-b560-b1069ace4ef2" name="Default" comment="" />
+      <created>1413219287251</created>
+      <updated>1413219287251</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.329718" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.329718" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329718" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="combo" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="myTodoPanelSettings">
+      <TodoPanelSettings />
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/tests/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="187">
+          <caret line="3" column="29" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/ownCloud-release-unsigned.apk.d">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="590">
+          <caret line="0" column="44" selection-start-line="0" selection-start-column="44" selection-end-line="0" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/actionbarsherlock/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.68" vertical-offset="90" max-vertical-offset="680">
+          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/values/setup.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1020">
+          <caret line="38" column="49" selection-start-line="38" selection-start-column="49" selection-end-line="38" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/values/attrs.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="590">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/values/styles.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1722" max-vertical-offset="2312">
+          <caret line="22" column="39" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.107142" vertical-offset="2040" max-vertical-offset="4743">
+          <caret line="135" column="25" selection-start-line="135" selection-start-column="25" selection-end-line="135" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/owncloud-android-library/wait_for_emulator.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="590">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/build.prop">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="272">
+          <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/project.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="590">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/ant.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="590">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/.classpath">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="272">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/owncloud-android-library/.settings/org.eclipse.jdt.core.prefs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="590">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/owncloud-android-library/.classpath">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="590">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="459">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/.project">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="680">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/owncloud-android-library/build.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1666">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.settings/org.eclipse.jdt.ui.prefs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="590">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.settings/org.eclipse.jdt.core.prefs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4930">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/owncloud-android-library/custom_rules.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="204">
+          <caret line="6" column="10" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/de/blaucloud/android/MainApp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="246" max-vertical-offset="1836">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#3563#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/encodings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="187">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.classpath">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.12" vertical-offset="0" max-vertical-offset="255">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/owncloud.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/anim/pump_top.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="646">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/anim/disappear.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="544">
+          <caret line="5" column="26" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oc_jb_workaround/.settings/org.eclipse.jdt.core.prefs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="590">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oc_jb_workaround/res/xml/authenticator.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="590">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oc_jb_workaround/src/com/owncloud/android/workaround/accounts/AccountAuthenticatorService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2244">
+          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#5184#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oc_jb_workaround/.classpath">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="590">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oc_jb_workaround/res/values/setup.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
+          <caret line="21" column="42" selection-start-line="21" selection-start-column="42" selection-end-line="21" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/owncloud-android-library/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="124" max-vertical-offset="714">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3468">
+          <caret line="23" column="30" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oc_jb_workaround/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="561">
+          <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1751">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/proguard.cfg">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="124" max-vertical-offset="714">
+          <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/proguard-project.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="590">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/local.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="590">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lint.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="590">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LICENSE.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5848">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/issue_template.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="646">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CONTRIBUTING.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="8.0" vertical-offset="200" max-vertical-offset="765">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="5" max-vertical-offset="1513">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2878" max-vertical-offset="3468">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.travis.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="391">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/de/blaucloud/android/ui/ActionItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2" max-vertical-offset="646">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/xml/preferences.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-14.571428" vertical-offset="272" max-vertical-offset="1224">
+          <caret line="40" column="17" selection-start-line="40" selection-start-column="17" selection-end-line="40" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/file_preview.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="583" max-vertical-offset="1173">
+          <caret line="56" column="17" selection-start-line="56" selection-start-column="17" selection-end-line="56" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/list_fragment.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="314" max-vertical-offset="918">
+          <caret line="30" column="21" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/notification_with_progress_bar.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="719" max-vertical-offset="1309">
+          <caret line="43" column="32" selection-start-line="43" selection-start-column="32" selection-end-line="43" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/pincodelock.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.82711864" vertical-offset="838" max-vertical-offset="1428">
+          <caret line="78" column="0" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
+

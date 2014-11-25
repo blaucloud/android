@@ -126,6 +126,6 @@
 		<item name="android:windowNoTitle">false</item>	
 	</style>    
 		
-	<color name="setup_text_hint">#777777</color>
-	<color name="setup_text_typed">#000000</color>
+	<color name="setup_text_hint">#ffffff</color>
+	<color name="setup_text_typed">#ffffff</color>
 </resources>

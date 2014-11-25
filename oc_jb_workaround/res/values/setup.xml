@@ -19,7 +19,7 @@
 <resources>
 
     <string name="workaround_app_name">ownCloud Jelly Bean Workaround for lost credentials</string>
-    <string name="main_app_name">ownCloud</string>
-    <string name="account_type">owncloud</string>
+    <string name="main_app_name">blaucloud</string>
+    <string name="account_type">blaucloud</string>
     
 </resources>
